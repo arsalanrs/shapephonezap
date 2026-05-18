@@ -5,8 +5,9 @@
  *
  *   npm install && npm run dev
  *
- * When AUTH_SESSION_SECRET is set, /index.html, /app.js, /styles.css, /fields-to-zap.json,
+ * When AUTH_SESSION_SECRET is set, /index.html, /app.js, /fields-to-zap.json,
  * and protected APIs require a valid session cookie (see /login.html).
+ * styles.css stays public so the login page can load it before auth.
  */
 
 require("dotenv").config({ path: require("path").join(__dirname, ".env") });
@@ -160,7 +161,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    let rel = pathname === "/" ? "index.html" : pathname.slice(1);
+    let rel = pathname === "/" ? "index.html" : pathname === "/login" ? "login.html" : pathname.slice(1);
     const filePath = path.resolve(ROOT, rel);
     if (!filePath.startsWith(ROOT)) {
       res.writeHead(403);
@@ -168,8 +169,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const staticProtected =
-      rel === "index.html" || rel === "app.js" || rel === "styles.css" || rel === "fields-to-zap.json";
+    const staticProtected = rel === "index.html" || rel === "app.js" || rel === "fields-to-zap.json";
     if (staticProtected && !hasValidSession(req)) {
       redirect(res, "/login.html");
       return;

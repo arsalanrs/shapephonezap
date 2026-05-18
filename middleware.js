@@ -67,16 +67,26 @@ export const config = {
   matcher: [
     "/",
     "/index.html",
+    "/login.html",
+    "/login",
     "/app.js",
-    "/styles.css",
     "/fields-to-zap.json",
     "/api/shape-lead",
     "/api/extract",
     "/api/shape-update",
+    "/api/login",
+    "/api/logout",
   ],
 };
 
 export default async function middleware(request) {
+  const url = new URL(request.url);
+  const p = url.pathname;
+  /** Always allow auth endpoints + login page (avoid matcher gaps / redirect loops). */
+  if (p === "/login.html" || p === "/login" || p === "/api/login" || p === "/api/logout") {
+    return fetch(request);
+  }
+
   if (!process.env.AUTH_SESSION_SECRET) {
     return fetch(request);
   }
@@ -87,7 +97,6 @@ export default async function middleware(request) {
     return fetch(request);
   }
 
-  const url = new URL(request.url);
   if (url.pathname.startsWith("/api/")) {
     return new Response(JSON.stringify({ error: "Unauthorized — sign in at /login.html" }), {
       status: 401,
