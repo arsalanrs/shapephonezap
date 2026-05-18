@@ -1,0 +1,174 @@
+{
+  "source": "Fields to zap now.docx",
+  "generatedBy": "scripts/extract-zap-fields.mjs",
+  "fields": [
+    {
+      "key": "firstname",
+      "label": "First Name"
+    },
+    {
+      "key": "lastname",
+      "label": "Last Name"
+    },
+    {
+      "key": "phone",
+      "label": "Mobile Phone"
+    },
+    {
+      "key": "email",
+      "label": "Email"
+    },
+    {
+      "key": "boraddress",
+      "label": "Present Address"
+    },
+    {
+      "key": "borcity",
+      "label": "City"
+    },
+    {
+      "key": "borstate",
+      "label": "State"
+    },
+    {
+      "key": "borzip",
+      "label": "Zip"
+    },
+    {
+      "key": "prStreetAddress",
+      "label": "Subject Property Address"
+    },
+    {
+      "key": "prAddressLine2",
+      "label": "Unit or Apartment #"
+    },
+    {
+      "key": "prCity",
+      "label": "City"
+    },
+    {
+      "key": "prState",
+      "label": "State"
+    },
+    {
+      "key": "prZip",
+      "label": "Zip"
+    },
+    {
+      "key": "prCounty",
+      "label": "County"
+    },
+    {
+      "key": "prCountry",
+      "label": "Country (always \"United States\")"
+    },
+    {
+      "key": "qkapppropertyType",
+      "label": "Property Type"
+    },
+    {
+      "key": "qkappnumberOfunits",
+      "label": "Number of Units"
+    },
+    {
+      "key": "qkappestAppraisalVal",
+      "label": "Estimated Appraisal Value"
+    },
+    {
+      "key": "propropertyUse",
+      "label": "Intended Use & Occupancy"
+    },
+    {
+      "key": "qkapppurpose",
+      "label": "Purpose"
+    },
+    {
+      "key": "LoanAmount",
+      "label": "Loan Amount"
+    },
+    {
+      "key": "borcreditscore",
+      "label": "Credit Score"
+    },
+    {
+      "key": "notes_sidebar",
+      "label": "Goals & Objectives – post to notes sidebar"
+    },
+    {
+      "key": "boryearsAtpresent",
+      "label": "Years at Present Address"
+    },
+    {
+      "key": "bormonthsAtCurrent",
+      "label": "Months at Present Address"
+    },
+    {
+      "key": "bormaritalstatusdetails",
+      "label": "Marital Status"
+    },
+    {
+      "key": "borcitizenship",
+      "label": "Citizenship"
+    },
+    {
+      "key": "leadveteran",
+      "label": "Military Service?"
+    },
+    {
+      "key": "bornumOfdepend",
+      "label": "Number of Dependents"
+    },
+    {
+      "key": "borageOfdepend",
+      "label": "Age of Dependents"
+    },
+    {
+      "key": "borempinfoEmpPosition",
+      "label": "Position or Title"
+    },
+    {
+      "key": "borempinfoEmpType",
+      "label": "Employment Type"
+    },
+    {
+      "key": "cobformDate",
+      "label": "Start Date"
+    },
+    {
+      "key": "cobtoDate",
+      "label": "End Date"
+    },
+    {
+      "key": "altpayFrequency",
+      "label": "Pay Frequency"
+    },
+    {
+      "key": "boremployer",
+      "label": "Employer Name"
+    },
+    {
+      "key": "boryearsonjob",
+      "label": "Years on Job"
+    },
+    {
+      "key": "borempaddress",
+      "label": "Employer Address"
+    },
+    {
+      "key": "borempPhone",
+      "label": "Employer Phone"
+    },
+    {
+      "key": "altempcontactWork",
+      "label": "May We Contact You at Work"
+    },
+    {
+      "key": "boryearsInwork",
+      "label": "Years in Line of Work"
+    },
+    {
+      "key": "altemploymentHistory",
+      "label": "Explain Employment History if < 2 Years"
+    }
+  ]
+}

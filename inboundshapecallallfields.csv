@@ -1,0 +1,1516 @@
+"Post Required","Field Name","Friendly Name",Value
+No,leadid,"Lead ID",string
+No,leadreferenceid,"Reference ID",string
+No,optInLanguage,"Opt-In Language",string
+No,consentCertificate,"Consent Certificate",string
+No,firstname,"First Name",string
+No,lastname,"Last Name",string
+No,leadfullname,Name,string
+No,email,Email,string
+No,phone,"Mobile Phone",phone
+No,workPhone,"Work Phone",phone
+No,mobilePhone,"Home Phone",phone
+No,address2,"Mailing Address",string
+No,city,"Mailing City",string
+No,state,"Mailing State",string
+No,zip,"Mailing Zip",string
+No,leadfulladdress,"Lead Full Address",string
+No,accountPriority,"Account Priority",string
+Yes,leadsource,Source,integer
+No,mktleadsubsource,"Sub Source",integer
+No,timeframe,Timeframe,string
+No,leadtags,Tags,string
+No,notes,Notes,longtext
+No,createdDate,"Created Date",datetime
+No,lastActivityDate,"Last Activity Date",datetime
+No,recent_notes,"Recent Note",string
+No,notes_sidebar,"Notes Sidebar",string
+No,notes_sidebar_ai_note,"Notes Sidebar AI Note",string
+No,recordtype,"Record Type",integer
+No,list_timezone,Timezone,string
+No,mktclientid,"Google Analytic Client ID",string
+No,mktmedium,"Google Analytic Medium",string
+No,mktsource,"Google Analytics Source",string
+No,mktcampaign,"Google Analytics Campaign",string
+No,mktkeyword,"Google Analytics Keyword",string
+No,mktdevice,"Google Analytics Device",string
+No,mktbrowser,"Google Analytics Browser",string
+No,mktcountry,"Google Analytics Country",string
+No,mktregion,"Google Analytics Region",string
+No,mktcity,"Google Analytics City",string
+No,mktother,"Google Analytics Other",string
+No,mktadcreativecontent,"Ad Creative Content",string
+No,mktadsetcampaignterm,"Ad Set Campaign Term",string
+No,mktcampaignname,"Facebook Campaign Name",string
+No,mktdestinationurl,"Destination URL",string
+No,mktcontentcategory,"Content Category",string
+No,mktcontentname,"Content Name",string
+No,mktsearchstring,"Search String",string
+No,mktpredictedltv,"Predicted LTV",string
+No,mktfbstatus,"Facebook Status",string
+No,mktnumberofitems,"Number of Items",string
+No,mktcurrency,"Facebook Currency",string
+No,mktfbvalue,"Facebook Value",string
+No,mktchannel,Channel,string
+No,mktreferringwebsite,"Referring Website",string
+No,mktprospecttype,"Prospect Type",string
+No,mktaltid1,"Alternate ID - 1",string
+No,mktaltid2,"Alternate ID - 2",string
+No,mktaltid3,"Alternate ID - 3",string
+No,mktaltid4,"Alternate ID - 4",string
+No,mktentryid,"Customer Entry ID",string
+No,mktentrydate,"Customer Entry Date",datetime
+No,mktuserip,"Customer User IP",string
+No,mktsourceurl,"Customer Source URL",string
+No,mktformtitle,"Customer Form Title",string
+No,mktreferencecode,"Customer Reference Code",string
+No,mktoptinmethod,"Customer Opt-In Method",string
+No,mktoptintime,"Opt-In Time",datetime
+No,mktexperimentslot1,"Experiment Slot 1",string
+No,mktexperimentslot2,"Experiment Slot 2",string
+No,mktexperimentslot3,"Experiment Slot 3",string
+No,mktexperimentslot4,"Experiment Slot 4",string
+No,mktexperimentslot5,"Experiment Slot 5",string
+No,mktexperimentslot6,"Experiment Slot 6",string
+No,mktexperimentslot7,"Experiment Slot 7",string
+No,mktexperimentslot8,"Experiment Slot 8",string
+No,refconcompanyname,"Referral Partner Company Name",string
+No,lastemaildate,"Last Email Date",datetime
+No,totalCallAttempt,"Total Call Attempts",integer
+No,lasttextdate,"Last Text Date",datetime
+No,lastcallattempt,"Last Call Attempt",datetime
+No,mktattributionData,"Attribution Data",string
+No,utm_source,"Marketing UTM Source",string
+No,utm_medium,"Marketing UTM Medium",string
+No,utm_term,"Marketing UTM Term",string
+No,utm_content,"Marketing UTM Content",string
+No,utm_campaign,"Marketing UTM Campaign",string
+No,first_utm_source,"Marketing First UTM Source",string
+No,first_utm_medium,"Marketing First UTM Medium",string
+No,first_utm_term,"Marketing First UTM Term",string
+No,first_utm_content,"Marketing First UTM Content",string
+No,first_utm_campaign,"Marketing First UTM Campaign",string
+No,fbclid,"Marketing FBCLID",string
+No,msclkid,"Marketing MSCLKID",string
+No,post_gclid,"Marketing GCLID",string
+No,post_original_ref,"Marketing Original Referring Domain",string
+No,post_landing_page,"Marketing Landing Page URL",string
+No,post_landing_page_base,"Marketing Landing Page Base URL",string
+No,post_ip,"Marketing IP",string
+No,post_ref,"Marketing Referrer",string
+No,post_url,"Marketing URL",string
+No,post_ref_domain,"Marketing Referring Domain",string
+No,post_url_base,"Marketing Base URL",string
+No,gaclientid,"Marketing Google Analytics Client ID",string
+No,organic_source,"Marketing Organic Source URL",string
+No,organic_source_str,"Marketing Organic Source",string
+No,user_agent,"Marketing User Agent",string
+No,traffic_source,"Marketing Traffic Source",string
+No,first_traffic_source,"Marketing First Traffic Source",string
+No,post_ref_id,"Marketing Tracking ID",string
+No,original_utm_source,"Original UTM Source",string
+No,original_utm_medium,"Original UTM Medium",string
+No,original_utm_term,"Original UTM Term",string
+No,original_utm_content,"Original UTM Content",string
+No,original_utm_campaign,"Original UTM Campaign",string
+No,original_landing_page_url,"Original Landing Page URL",string
+No,original_landing_page_base_url,"Original Landing Page Base URL",string
+No,original_referrer,"Original Referrer",string
+No,original_url,"Original URL",string
+No,original_base_url,"Original Base URL",string
+No,original_referring_domain,"Original Referring Domain",string
+No,original_organic_source_url,"Original Organic Source URL",string
+No,original_organic_source,"Original Organic Source",string
+No,original_traffic_source,"Original Traffic Source",string
+No,original_tracking_id,"Original Tracking Id",string
+No,creditscore,"Credit Score",string
+No,refnotes,"Referral Notes",longtext
+No,refcity,"Partner Physical City",string
+No,refstate,"Partner Physical State",string
+No,prStreetAddress,"Subject Property Address",string
+No,prCity,"Property City",string
+No,prState,"Property State",string
+No,prZipCode,"Property Zip",string
+No,prCounty,"Property County",string
+No,prCountry,"Property Country",string
+No,prAddressLine2,"Property Unit or Apartment #",string
+No,purchasearea,"Purchase Area",string
+No,nameofbusiness,"Business Name",string
+No,officePhone,"Business Office Phone",phone
+No,principalOwner,"Business Principal Owner?",string
+No,businessStartDate,"Business Start Date",date
+No,businessAddress,"Business Address",string
+No,bussinessCity,"Business City",string
+No,bussinessState,"Business State",string
+No,bussinessZip,"Business Zip",string
+No,lonapr,APR,txtDecimal
+No,benyearoption,"Benefit Selected Saving Year",string
+No,cbiPresentFullAddress,"Co-Borrower Present Full Address",string
+No,boMailFullAddress,"Borrower Mailing Full Address",string
+No,cbiMailFullAddress,"Co-Borrower Mailing Full Address",string
+No,borFormerFullAddress,"Borrower Former Full Address",string
+No,cobFormerFullAddress,"Co-Borrower Former Full Address",string
+No,boMailStreetAddress,"Borrower Mailing Address",string
+No,boMailCity,"Borrower Mailing City",string
+No,boMailState,"Borrower Mailing State",string
+No,boMailZipCode,"Borrower Mailing Zipcode",string
+No,subpropfulladdress,"Subject Property Full Address",string
+No,zestimateaddress,"Zestimate Address",string
+No,borpresentfulladdress,"Borrower Present Full Address",string
+No,bormailingfulladdress,"Borrower Mailing Full Address",string
+No,coborpresentfulladdress,"Co-Borrower Present Full Address",string
+No,cobormailingfulladdress,"Co-Borrower Mailing Full Address",string
+No,mailingfulladdress,"Mailing Full Address",string
+No,physicalfulladdress,"Physical Full Address",string
+No,cbiPresentStreetAddress,"Co-Borrower Address",string
+No,cbiPresentCity,"Co-Borrower City",string
+No,cbiPresentState,"Co-Borrower State",string
+No,cbiPresentZipCode,"Co-Borrower Zipcode",string
+No,cbiMailStreetAddress,"Co-Borrower Mailing Address",string
+No,cbiMailCity,"Co-Borrower Mailing City",string
+No,cbiMailState,"Co-Borrower Mailing State",string
+No,cbiMailZipCode,"Co-Borrower Mailing Zipcode",string
+No,referralsource,"Referral Source",string
+No,trkloanrefId,"Tracking Loan RefId",string
+No,trkloannnumber,"Tracking Loan Number",string
+No,trkloanstatus,"Tracking Loan Status",string
+No,lntmemployeeloan,"Employee Loan",boolean
+No,lntmdnsync,"Do Not Sync",boolean
+No,trkorganizationname,"LO Organization Name",string
+No,trklntmloorgaddress,"LO Address",string
+No,trkagencycasenum,"Agency Case Number",string
+No,lntmloname,"Loan Originator Name",string
+No,lntmlonmls,"Loan Originator NMLS",string
+No,lntmreferringloname,"Referring LO Name",string
+No,lntmreferringlonmls,"Referring LO NMLS",string
+No,lntmreferringemp,"Referring Employee",string
+No,lntmbranchcode,"Branch Code",string
+No,lntmbranchrev,"Branch Revenue",string
+No,lntminvestor,Investor,string
+No,lntmbranchprocessor,"Branch Processor",string
+No,lntmbranchprocessorname,"Branch Processor Name",string
+No,lntmbranchprocessoremail,"Branch Processor Email",string
+No,lntmbranchprocessorphone,"Branch Processor Phone",string
+No,lntmbranchprocessorfax,"Branch Processor Fax",string
+No,lntmprocessor,Processor,string
+No,trklandercasenum,"Tracking Lender Case Number",string
+No,trklockdate,"Tracking Lock Date",datetime
+No,trklockexpdate,"Tracking Lock Expiration Date",datetime
+No,trkestifunddate,"Tracking Estimated Funding Date",datetime
+No,trkappdate,"Tracking Application Date",datetime
+No,trkappraisaldate,"Tracking Appraisal Date",datetime
+No,trkesticlosedate,"Estimated Closing Date",datetime
+No,trkfunddate,"Funded Date - (Tracking)",datetime
+No,trkdateclosed,"Tracking Date Closed",datetime
+No,trkmarket_points2,"Tracking Market Points",string
+No,trkorigination_points2,"Tracking Origination Points",string
+No,trkprogramcode2,"Tracking Program Code",string
+No,trkfunder2,"Funder - (Tracking)",string
+No,trkloan_notes,"Tracking Loan Notes",string
+No,trkappraisalContingency,"Appraisal Contingency",datetime
+No,trkfinancingContingency,"Financing Contingency",datetime
+No,trkappraisalExpectedDelivery,"Appraisal Expected Delivery",datetime
+No,trkappraisalInspection,"Appraisal Inspection",datetime
+No,trkappraisalreceivedDate,"Appraisal Received Date",datetime
+No,trkappraisalrequestDate,"Appraisal Request Date",datetime
+No,trkcondoQlreceivedDate,"Condo Questionnaire Received Date",datetime
+No,trkcondoQrequestDate,"Condo Questionnaire Request Date",datetime
+No,trkcreditReportreceivedDate,"Credit Report Received Date",datetime
+No,trkcreditReportrequestDate,"Credit Report Request Date",datetime
+No,trkcreditSuppreceivedDate,"Credit Supplement Received Date",datetime
+No,trkcreditSupprequestDate,"Credit Supplement Request Date",datetime
+No,trkFIBinderreceivedDate,"Flood Insurance Binder Received Date",datetime
+No,trkFIBinderrequestDate,"Flood Insurance Binder Request Date",datetime
+No,trkFIQuotereceivedDate,"Flood Insurance Quote Received Date",datetime
+No,trkFIQuoterequestDate,"Flood Insurance Quote Request Date",datetime
+No,trkHIBinderreceivedDate,"Hazard Insurance Binder Received Date",datetime
+No,trkHIBinderrequestDate,"Hazard Insurance Binder Request Date",datetime
+No,trkHIQuotereceivedDate,"Hazard Insurance Quote Received Date",datetime
+No,trkHIQuoterequestDate,"Hazard Insurance Quote Request Date",datetime
+No,trkinitialDiscreceivedDate,"Initial Disclosure  Received Date",datetime
+No,trkinitialDiscrequestDate,"Initial Disclosure  Request Date",datetime
+No,trkmasterPolicyreceivedDate,"Master Policy Received Date",datetime
+No,trkmasterPolicyrequestDate,"Master Policy Request Date",datetime
+No,trkmersreceivedDate,"MERS Received Date",datetime
+No,trkmersrequestDate,"MERS Request Date",datetime
+No,trkssareceivedDate,"SSA Received Date",datetime
+No,trkssarequestDate,"SSA Request Date",datetime
+No,trktaxTranscriptsreceivedDate,"SSA Received Date",datetime
+No,trktaxTranscriptsrequestDate,"SSA Request Date",datetime
+No,trktitleBinderreceivedDate,"Title Binder Received Date",datetime
+No,trktitleBinderrequestDate,"Title Binder Request Date",datetime
+No,trkvoereceivedDate,"VOE Received Date",datetime
+No,trkvoerequestDate,"VOE Request Date",datetime
+No,trkvomreceivedDate,"VOM Received Date",datetime
+No,trkvomrequestDate,"VOM Request Date",datetime
+No,trkvvoereceivedDate,"VVOE Received Date",datetime
+No,trkvvoerequestDate,"VVOE Request Date",datetime
+No,trkgfeapplicationdate,"GFE Application Date",datetime
+No,trkfilestarteddate,"Date File Started",datetime
+No,trkappraisaldocorderdate,"Appraisal Ordered",datetime
+No,trkappraisaldocreceivedate,"Appraisal Received",datetime
+No,trkonlineappsubmitteddate,"Online App Submitted Date",datetime
+No,trkprequalifieddate,"Prequalified Date",datetime
+No,isprequalifiedclient,"Is Client Prequalified?",boolean
+No,trkprocessingdate,"Processing Date",datetime
+No,trkuwsubimssion,"Submitted to UW Date",datetime
+No,trkapproveddate,"Approved w/ Conditions Date",datetime
+No,trkresubmittaldate,"Re-Submittal Date",datetime
+No,trkfinalapprovaldate,"Final Approval Date",datetime
+No,trkcleartoclosedate,"Clear to Close Date",datetime
+No,trkpreapprovaldate,"Pre-Approval Date",datetime
+No,trkpreapprovalissuedate,"Pre-Approval Issued Date",datetime
+No,trkpreapprovalexpdate,"Pre-Approval Expiration Date",date
+No,trkappsentdate,"Application Sent Date",datetime
+No,trkappstartdate,"Application Started Date",datetime
+No,trkappcompleteddate,"Application Completed Date",datetime
+No,trkdiscloseddate,"Disclosed Date",datetime
+No,trkTRIDdate,"TRID Date",datetime
+No,trklesentdate,"LE/GFE Sent Date",datetime
+No,trkleexpdate,"LE/GFE Expiration Date",datetime
+No,trkintentdate,"Intend to ProceedDate",datetime
+No,trkdisclosuresentdate,"Disclosures Sent Date",datetime
+No,trkdisclosuresduedate,"Disclosures Due Date",datetime
+No,trkdisclosuresigndate,"Disclosures Signed Date",datetime
+No,trkdisclosurereleasedate,"Disclosures Release Date",datetime
+No,trkinitialDiscsentDate,"Initial CD Sent Date",datetime
+No,trkcreditauthdate,"Credit Authorization Date",datetime
+No,trkcreditreportorderdate,"Credit Report Date",datetime
+No,trkcreditexpdate,"Credit Expiration Date",datetime
+No,trktitleorderdate,"Title Ordered Date",datetime
+No,trktitlereceivedate,"Title Received Date",datetime
+No,trkhoiorderdate,"HOI Ordered Date",datetime
+No,trkhoireceivedate,"HOI Received Date",datetime
+No,trksuspenddate,"Suspended Date",datetime
+No,trkdenydate,"Denied Date",datetime
+No,trkwithdrawndate,"Withdrawn Date",datetime
+No,trkcanceldate,"Cancelled Date",datetime
+No,trklockcanceldate,"Lock Rate Cancellation Date",datetime
+No,trkLOScreatedate,"LOS Creation Date",datetime
+No,trksetupreceivedate,"Setup Received Date",datetime
+No,trkinitialdecisiondate,"Initial Decision Date",datetime
+No,trkcontractdate,"Contract Date",datetime
+No,trkexpcommitmentdate,"Expected Commitment Date",datetime
+No,trkcommitmentdate,"Commitment Date",datetime
+No,trkcommitmentexpdate,"Commitment Expiration Date",datetime
+No,trkloancontingencydate,"Loan Contingency Date",datetime
+No,trkclosingcontingencydate,"Closing Contingency Date",datetime
+No,trkclosingsubmitdate,"Closing Submitted Date",datetime
+No,trkcash2keysdate,"Cash 2 Keys Closing Date",datetime
+No,trkfirstpaymentdate,"First Payment Date",datetime
+No,trkloanpaidinfull,"Loan Paid in Full Date",datetime
+No,bufdateofformation,"Alternative Finance Received Date",datetime
+No,bufstate,"State of Formation",string
+No,buffederaltaxId,"Federal Tax ID/EIN",string
+No,bufnoofcurrentemp,"Number of Current Employees",string
+No,bufbusinesscategory,"Business Category",string
+No,bufbusinessReference,"Business Reference(s)?",string
+No,buftypeofproductorservicesold,"Type of Product or Service Sold",string
+No,bufbusinessAddress,"Business Finance Address",string
+No,bufbussinessCity,"Business Finance City",string
+No,bufbussinessState,"Business Finance State",string
+No,bufbussinessZip,"Business Finance Zip Code",string
+No,bufpropertyowership,"Property Ownership",string
+No,buflandlordname,"Landlord/Mortgage Contact Name",string
+No,buflandlordphonenumber,"Landlord/Mortgage Phone",string
+No,bufrentpayment,"Rent/Mortgage Payment",txtCurrency
+No,bufavgmonthlyccs,"Average Monthly Credit Card Sales",txtCurrency
+No,buftotalmonthlysale,"Average Total Monthly Sales",txtCurrency
+No,bufanualgrosssales,"Annual Gross Sales/Receipts",txtCurrency
+No,bufanualgrossprofit,"Annual Gross Profit",txtCurrency
+No,bufnetbusinessIncome,"YTD-Net Business Income",txtCurrency
+No,altfileType,"Alternative Finance File Type",string
+No,altloannumber,"Alternative Finance Loan Number",string
+No,altesticlosedate,"Alternative Finance Estimated Closing Date",datetime
+No,altactualClosedate,"Actual Closing Date",datetime
+No,altloanNotes,"Alternative Finance Loan Notes",string
+No,altcoBorrower,Co-Borrower?,string
+No,altextension,"Alternative Finance Extension",string
+No,altaddress,"Alternative Finance Present Address",string
+No,altcity,"Alternative Finance Present City",string
+No,altstate,"Alternative Finance Present State",string
+No,altzip,"Alternative Finance Present Zip",string
+No,altresidedPresentAddress,"Resided at Present Address < 2 Years?",string
+No,altdriverState,"Driver License State",string
+No,altbuyhold,"Does the borrower have fix & flip or buy & hold experience?",integer
+No,altgroundup,"Does the borrower have ground-up construction experience?",integer
+No,altprojectsCurrently,"Does the borrower have any projects currently in progress?",integer
+No,altinvestmentProperties,"Does the borrower own investment properties?",integer
+No,altprofessionalLicenses,"Do you have any professional licenses?",integer
+No,altbuilder,"Are you a builder/developer?",integer
+No,buyholdExperience,"Years of Experience for fix & flip or buy & hold experience",string
+No,buyholdCompleted,"Properties Completed (36 mo) for fix & flip or buy & hold experience",string
+No,groundupExperience,"Years of Experience for ground-up construction experience",string
+No,groundupCompleted,"Properties Completed (36 mo) for for ground-up construction experience",string
+No,altprimaryInvestManagement,"Primary Investment Strategy",string
+No,altprimaryExplanation,"Primary Investment Strategy Explanation",string
+No,altmoneyMarket,"Savings/Money Market/CDs Esimated Value",string
+No,altstocks,"Stocks/Bonds Esimated Value",string
+No,altkeoghAccount,"IRA/Keogh Accounts Esimated Value",string
+No,altesopAccount,"401K/ESOP Accounts Esimated Value",string
+No,altlifeInsurance,"Life Insurance -- Cash Surrender Value Esimated Value",string
+No,altsecResidences,"Secondary Residences Esimated Value",string
+No,altotherRealEst,"Other Real Estate Esimated Value",string
+No,altotherAssets,"Other Assets Esimated Value",string
+No,altassetsDetails,"Other Assets Details Esimated Value",string
+No,altassetTotal,"Total Assets Esimated Value",string
+No,lifeInsuranceAmt,"Life Insurance -- Cash Surrender Value Amount Owed",txtCurrency
+No,secResidencesAmt,"Secondary Residences Amount Owed",txtCurrency
+No,otherRealEstAmt,"Other Real Estate Amount Owed",txtCurrency
+No,assetTotalAmt,"Total Assets Amount Owed",txtCurrency
+No,altpayFrequency,"Pay Frequency",string
+No,altemployerAddress,"Employer Address",string
+No,altempcontactWork,"May We Contact You at Work?",string
+No,altemploymentHistory,"Explain Employment History if < 2 Years",string
+No,altlockedloanFile,"Locked Loan File",string
+No,altdesiredclosingDate,"Desired Closing Date",datetime
+No,altneedsRehab,"Needs Rehab or Construction?",string
+No,altpropertyValue,"Property Value (as-is)",txtCurrency
+No,altarv,ARV,txtCurrency
+No,altresalePrice,"Resale Price",txtCurrency
+No,altcostSpent,"Cost Spent",txtCurrency
+No,altacquistionPayment,"Acquisition Down Payment",txtCurrency
+No,altrehabCost,"Rehab/Construction Cost",txtCurrency
+No,altrehabFinanced,"Rehab/Construction % Financed",txtDecimal
+No,altinitialLoanAmt,"Initial Loan Amount",txtCurrency
+No,altpayOff1,"Pay-Off on Mortgage 1",txtCurrency
+No,altpayOff2,"Pay-Off on Mortgage 2",txtCurrency
+No,altpayoffTaxes,"Pay Off Oustanding Taxes",txtCurrency
+No,altrehabcostFinanced,"Rehab/Construction Cost Financed",txtCurrency
+No,altcashoutTotal,"Total Cash Out",txtCurrency
+No,altprojectTotalvalue,"Total Project Value",txtCurrency
+No,altacquisitionltv,"Acquisition LTV",txtDecimal
+No,altmarketltv,"Market LTV",txtDecimal
+No,altsimpleArv,"Simple ARV",txtDecimal
+No,altfullArv,"Full ARV",txtDecimal
+No,altloanTocost,"Loan-to-Cost (LTC)",txtDecimal
+No,altpropertylistLink,"Property Listing Link",string
+No,altpropertyCondition,"Property Condition",string
+No,altconditionNotes,"Condition Notes",string
+No,altpropertyAccess,"Property Access",string
+No,altlockboxInfo,"Lock Box Info",string
+No,altcontactName,"Property Access Contact Name",string
+No,altcontactEmail,"Property Contact Email",string
+No,altcontactPhone,"Property Contact Phone",string
+No,altpropertyExtension,"Property Extension",string
+No,altinteriorAccess,"Interior Access?",string
+No,altloanCross,"Loan Cross Collateralized?",string
+No,altpotentialIncome,"Gross Potential Income",txtCurrency
+No,altvacancy,Vacancy,txtCurrency
+No,altvacancyRate,"Vacancy Rate",txtDecimal
+No,alteffectiveIncome,"Effective Gross Income",txtCurrency
+No,altannualTax,"Annual Property Tax",txtCurrency
+No,altannualPolicy,"Annual Insurance Policy Premium",txtCurrency
+No,althoaFees,"HOA Fees",txtCurrency
+No,altoperatingExpenses,"Operating Expenses",txtCurrency
+No,altnetOperating,"Net Operating Income",txtCurrency
+No,altcapRate,"Cap Rate",txtDecimal
+No,altreserves,Reserves,txtCurrency
+No,altreserveFactor,"Reserve Factor",txtCurrency
+No,altrentableFeet,"Rentable Sq. Feet",string
+No,altdebtRatio,"Debt Service Ratio",txtDecimal
+No,altserviceDebt,"Cash Available to Service Debt",txtCurrency
+No,altlargentTenant,"Gross Annual Rent of Largest Tenant",txtCurrency
+No,altlandAcquisition,"Land Acquisition",txtCurrency
+No,altnewConstruction,"New Building Construction",txtCurrency
+No,altconstContingency,"Construction Contingency (5-10%)",txtCurrency
+No,altbusinessAcquisition,"Business Acquisition",txtCurrency
+No,altlandBusinessAmt,"Land and Business Acquisition",txtCurrency
+No,altrenovations,Improvements/Repairs/Renovations,txtCurrency
+No,altequipment,"Acquisition of Machinery/Equipment",txtCurrency
+No,altfixtures,"Acquisition of Furniture/Fixtures",txtCurrency
+No,altinventoryPurchase,"Inventory Purchase",txtCurrency
+No,altworkingCapital,"Working Capital (+Accounts Payable)",txtCurrency
+No,altrefinancingDebt,"Refinancing Existing Business Debt",txtCurrency
+No,altfranchiseFee,"Franchise Fee",txtCurrency
+No,altclosingCost,"Closing Cost (~5% of Loan Amount)",txtCurrency
+No,altotherCost,"Other Cost",txtCurrency
+No,altotherCost1,"Other Cost 2",txtCurrency
+No,altestprojectCost,"Total Estimated Project Cost",txtCurrency
+No,altlessOwner,"Less Owner’s Equity to be Injected",txtCurrency
+No,altlessSeller,"Less Seller Carry-Back (If Applicable)",txtCurrency
+No,altprojectTotalitem,"Total Loan Requested for Project",string
+No,cobcoOwnpropertytype,"Co-borrow Are there any outstanding judgements against you?",boolean
+No,borownpropertyTitle,"Are there any outstanding judgements against you?",boolean
+No,cobcoOwnpropertytitle,"Co-borrow Are there any outstanding judgements against you?",boolean
+No,bordownpaymentborSub,"Are there any outstanding judgements against you?",string
+No,cobcoDownpaymentborsub,"Co-borrow Are there any outstanding judgements against you?",string
+No,bordownpaymenttext,"Are there any outstanding judgements against you?",int
+No,cobcoDownpaymenttext,"Co-borrow Are there any outstanding judgements against you?",int
+No,borcomakernotestext,"Are there any outstanding judgements against you?",string
+No,cobcoComakernotestext,"Co-borrow Are there any outstanding judgements against you?",string
+No,boruscitizentext,"Are there any outstanding judgements against you?",string
+No,cobcoUScitizentext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borresidentalientext,"Are there any outstanding judgements against you?",string
+No,cobcoResidentalientext,"Co-borrow Are there any outstanding judgements against you?",string
+No,boroutstandingjudgementstext,"Are there any outstanding judgements against you?",string
+No,cobcoOutstandingjudgementstext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borpresentlydelinquenttext,"Are there any outstanding judgements against you?",string
+No,cobcoPresentlydelinquenttext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borpartylawsuittext,"Are there any outstanding judgements against you?",string
+No,cobcoPartylawsuittext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borhaveforeclosedtext,"Are there any outstanding judgements against you?",string
+No,cobcoHaveforeclosedtext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borpreforeclosuresaletext,"Are there any outstanding judgements against you?",string
+No,cobcoPreforeclosuresaletext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borpropertyforeclosedtext,"Are there any outstanding judgements against you?",string
+No,cobcoPropertyforeclosedtext,"Co-borrow Are there any outstanding judgements against you?",string
+No,borhavebankrupttext,"Are there any outstanding judgements against you?",string
+No,cobcoHavebankrupttext,"Co-borrow Are there any outstanding judgements against you?",string
+No,boroutstandingjudgements,"Are there any outstanding judgements against you?",boolean
+No,cobcoOutstandingjudgements,"Co-borrow Are there any outstanding judgements against you?",boolean
+No,borhavebankrupt,"Have you declared bankruptcy within the past 7 years?",boolean
+No,cobcoHavebankrupt,"Co-borrow Have you declared bankruptcy within the past 7 years?",boolean
+No,borhaveforeclosed,"Have you conveyed title to any property in lieu of foreclosure in the past 7 years?",boolean
+No,cobcoHaveforeclosed,"Co-borrow Have you conveyed title to any property in lieu of foreclosure in the past 7 years?",boolean
+No,borpartylawsuit,"Are you a party to a lawsuit in which you potentially have any personal financial liability?",boolean
+No,cobcoPartylawsuit,"Co-borrow Are you a party to a lawsuit in which you potentially have any personal financial liability?",boolean
+No,borhaveobligated,"Have you directly or indirectly been obligated on any loan which resulted in foreclosure",boolean
+No,cobcoHaveobligated,"Co-borrow Have you directly or indirectly been obligated on any loan which resulted in foreclosure",boolean
+No,borpresentlydelinquent,"Are you currently delinquent or in default on a Federal debt?",boolean
+No,cobcoPresentlydelinquent,"Co-borrow Are you currently delinquent or in default on a Federal debt?",boolean
+No,borpayalimony,"Are you obligated to pay alimony, child support, or separate maintenance?",boolean
+No,cobcoPayalimony,"Co-borrow Are you obligated to pay alimony, child support, or separate maintenance?",boolean
+No,bordownpaymentbor,"Are you borrowing any money for this real estate transaction (e.g., money for your closing costs or down payment) or obtaining any money from another party, such as the seller or realtor, that you have not disclosed on this loan application?",boolean
+No,cobcoDownpaymentbor,"Co-borrow Are you borrowing any money for this real estate transaction (e.g., money for your closing costs or down payment) or obtaining any money from another party, such as the seller or realtor, that you have not disclosed on this loan application?",boolean
+No,borcomakernotes,"Are you a co-signer or guarantor on any debt or loan that is not disclosed on this application?",boolean
+No,cobcoComakernotes,"Co-borrow Are you a co-signer or guarantor on any debt or loan that is not disclosed on this application?",boolean
+No,borusCitizen,"Are you a U.S. citizen?",boolean
+No,cobcoUScitizen,"Co-borrow Are you a U.S. citizen?",boolean
+No,borresidentalien,"Are you a permanent resident alien?",boolean
+No,cobcoResidentalien,"Co-borrow Are you a permanent resident alien?",boolean
+No,borprimaryresidence,"Will you occupy the property as your primary residence?",boolean
+No,cobcoPrimaryresidence,"Co-borrow Will you occupy the property as your primary residence?",boolean
+No,borownershipinterest,"Have you had an ownership interest in a property in the last three years?",boolean
+No,cobcoOwnershipinterest,"Co-borrow Have you had an ownership interest in a property in the last three years?",boolean
+No,borpurchaseTransaction,"Do you have a family relationship or business affiliation with the seller of the property?",boolean
+No,cobcoPurchaseTransaction,"Co-borrow If this is a Purchase Transaction: Do you have a family relationship or business affiliation with the seller of the property?",boolean
+No,borpropertyForeclosed,"Have you had property foreclosed upon in the last 7 years?",boolean
+No,cobcoPropertyForeclosed,"Co-borrow Have you had property foreclosed upon in the last 7 years?",boolean
+No,boranotherProperty,"Have you or will you be applying for a mortgage loan on another property on this loan application?",boolean
+No,cobcoAnotherProperty,"Co-borrow Have you or will you be applying for a mortgage loan on another property on this loan application?",boolean
+No,boranotherCredit,"Have you or will you be applying for any new credit on this loan application?",boolean
+No,cobcoAnotherCredit,"Co-borrow Have you or will you be applying for any new credit on this loan application?",boolean
+No,borpropertyTaxes,"Will this property be subject to a lien that could take priority over the first mortgage lien, such as a clean energy lien paid through your property taxes?",boolean
+No,cobcoPropertyTaxes,"Co-borrow Will this property be subject to a lien that could take priority over the first mortgage lien, such as a clean energy lien paid through your property taxes?",boolean
+No,borpreforeclosureSale,"Within the past 7 years, have you completed a pre-foreclosure sale or short sale, whereby the property was sold to a third party and the Lender agreed to accept less than the outstanding mortgage balance due?",boolean
+No,cobcoPreforeclosureSale,"Co-borrow Within the past 7 years, have you completed a pre-foreclosure sale or short sale, whereby the property was sold to a third party and the Lender agreed to accept less than the outstanding mortgage balance due?",boolean
+No,coboutstandingJudgement,"QuickApp-DESCR Are there any outstanding judgements against you?",string
+No,cobhavebankrupt,"QuickApp-DESCR Have you declared bankruptcy within the past 7 years?",string
+No,cobhaveforeclosed,"QuickApp-DESCR Have you conveyed title to any property in lieu of foreclosure in the past 7 years?",string
+No,cobpartylawsuit,"QuickApp-DESCR Are you a party to a lawsuit in which you potentially have any personal financial liability?",string
+No,cobhaveobligated,"QuickApp-DESCR Directly or indirectly Transfer of title in lieu of foreclosure, or judgment?",string
+No,cobpresentlydelinquent,"QuickApp-DESCR Are you presently delinquent bond, or loan guarantee?",string
+No,cobpayalimony,"QuickApp-DESCR Are you obligated to pay alimony, child support, or separate maintenance?",string
+No,cobdownpayment,"QuickApp-DESCR Are you borrowing any money for this real estate transaction (e.g., money for your closing costs or down payment) or obtaining any money from another party, such as the seller or realtor, that you have not disclosed on this loan application? If YES, what is the amount of this money?",string
+No,cobcoMaker,"QuickApp-DESCR Are you a co-signer or guarantor on any debt or loan that is not disclosed on this application?",string
+No,cobusCitizen,"QuickApp-DESCR Are you a U.S. citizen?",string
+No,cobresidentalien,"QuickApp-DESCR Are you a permanent resident alien?",string
+No,cobprimaryresidence,"QuickApp-DESCR Will you occupy the property as your primary residence?",string
+No,cobownershipinterest,"QuickApp-DESCR Have you had an ownership interest in a property in the last three years?",string
+No,cobdeclarationjudegments,"QuickApp-Co-borrow DESCR Are there any outstanding judgements against you?",string
+No,cobdeclarationbankrupt,"QuickApp-Co-borrow DESCR Have you declared bankruptcy within the past 7 years?",string
+No,cobdeclarationforeclosed,"QuickApp-Co-borrow DESCR Have you conveyed title to any property in lieu of foreclosure in the past 7 years?",string
+No,cobdeclarationlawsuit,"QuickApp-Co-borrow DESCR Are you a party to a lawsuit in which you potentially have any personal financial liability?",string
+No,cobdeclarationObligated,"QuickApp-Co-borrow DESCR Directly or indirectly Transfer of title in lieu of foreclosure, or judgment?",string
+No,cobdeclarationdelinquent,"QuickApp-Co-borrow DESCR Are you presently delinquent bond, or loan guarantee?",string
+No,cobdeclarationalimony,"QuickApp-Co-borrow DESCR Are you obligated to pay alimony, child support, or separate maintenance?",string
+No,cobdeclarationdownpayment,"QuickApp-Co-borrow DESCR Are you borrowing any money for this real estate transaction (e.g., money for your closing costs or down payment) or obtaining any money from another party, such as the seller or realtor, that you have not disclosed on this loan application? If YES, what is the amount of this money?",string
+No,cobdeclarationMaker,"QuickApp-Co-borrow DESCR Are you a co-signer or guarantor on any debt or loan that is not disclosed on this application?",string
+No,cobdeclarationUScitizen,"QuickApp-Co-borrow DESCR Are you a U.S. citizen?",string
+No,cobdeclarationResident,"QuickApp-Co-borrow DESCR Are you a permanent resident alien?",string
+No,cobdeclarationPrimary,"QuickApp-Co-borrow DESCR Will you occupy the property as your primary residence?",string
+No,cobdeclarationOwnership,"QuickApp-Co-borrow DESCR Have you had an ownership interest in a property in the last three years?",string
+No,leadbankruptcy,Bankruptcy,string
+No,lanforeclosure,Foreclosure?,string
+No,lanshortsale,"Short Sale?",string
+No,latemortgagePayment,"Late Payments?",string
+No,firsttimehomebuyer,"First Time Homebuyer?",string
+No,leadfhaloan,"FHA Loan?",string
+No,leadveteran,Veteran?,string
+No,leadvaDisability,"VA Disability",string
+No,portalMilitaryIncomeAmount,"Portal Military Income Amount",txtCurrency
+No,portalEmploymentOvertime,"Portal Employment Overtime",string
+No,portalEmploymentBonus,"Portal Employment Bonus",string
+No,portalEmploymentCommission,"Portal Employment Commission",string
+No,portalEmployementbtn,"Portal Employment Button",string
+No,portalSeltEmployementbtn,"Portal Self Employment Button",string
+No,portalPensionbtn,"Portal Pension Button",string
+No,portalAssetAmount,"Portal Asset Amount",txtCurrency
+No,portalAdditionalRealEstateButton,"Portal Additional Real Estate Button",string
+No,leadGUID,"Lead GUID",string
+No,leadloanGUID,"Loan GUID",string
+No,bormonthlyIncome,"Borrower Monthly Income",txtCurrency
+No,ispreapprovedclient,Pre-Approved,boolean
+No,issignedpurchaseagreement,"Signed Purchase Agreement",boolean
+No,isrecordedcheck,Recorded,boolean
+No,isloanservicingclient,Servicing,boolean
+No,boMailStreetAddress2,"Borrower Mailing Unit or Apartment #",string
+No,bonomilitarycheck,"Borrower Military Service - None",boolean
+No,borsameAspresent,"Mailing address is NOT the same as current address",boolean
+No,cosameAsmailing,"Co-Borrower Mailing address is NOT the same as current address",boolean
+No,boactivedutycheck,"Borrower Military Service - Currently serving or active duty with projected expiration date of service.tour",boolean
+No,boretiredmilitarycheck,"Borrower Military Service - Currently retired, discharged or separated from service",boolean
+No,boservicemilitarycheck,"Borrower Military Service - Only period of service was as a non-activated member of the Reserve or National Guard",boolean
+No,borsurvivingspousecheck,"Borrower Military Service - Surviving spouse",boolean
+No,bordemographicsmethod,"Borrower Demographics Provided Method",boolean
+No,cbinomilitarycheck,"Co-Borrower Military Service - None",boolean
+No,cbiactivedutycheck,"Co-Borrower Military Service - Currently serving or active duty with projected expiration date of service.tour",boolean
+No,cbiretiredmilitarycheck,"Co-Borrower Military Service - Currently retired, discharged or separated from service",boolean
+No,cbiservicemilitarycheck,"Co-Borrower Military Service - Only period of service was as a non-activated member of the Reserve or National Guard",boolean
+No,cbisurvivingspousecheck,"Co-Borrower Military Service - Surviving spouse",boolean
+No,cbidemographicsmethod,"Co-Borrower Demographics Provided Method",boolean
+No,borpreforeclosureSaledesc,"Borrower - DU Policy Feature Description: Completed a pre-foreclosure sale or short sale",string
+No,cobcopreforeclosureSaledesc,"Co-Borrower - DU Policy Feature Description: Completed a pre-foreclosure sale or short sale",string
+No,borpropertyForecloseddesc,"Borrower - DU Policy Feature Description: Had property foreclosed upon in the last 7 years",string
+No,cobcoPropertyForecloseddesc,"Co-Borrower - DU Policy Feature Description: Had property foreclosed upon in the last 7 years",string
+No,boreconsentauthcheck,"eConsent Authorization",integer
+No,cbieconsentauthcheck,"Co-borrower eConsent Authorization",integer
+No,cbiworkphoneext,Extension,string
+No,borworkphoneext,Extension,string
+No,mktleadprice,"Marketing Lead Price",txtCurrency
+No,mktleadscore,"Marketing Lead Score",string
+No,mktmailshopdropcode,"Mail Shop Drop Code",string
+No,mktclosinglikelihoodscore,"Closing Likelihood Score",string
+No,primaryNoDrips,"Primary No Drip Campaigns",integer
+No,secondaryNoDrips,"Secondary Contact",integer
+No,primaryconsentTCPA,"Primary TCPA Consent",integer
+No,primaryconsentDNC,"Primary Do Not Contact",integer
+No,primaryconsenttext,"Primary Text Opt Out",integer
+No,primaryconsentemail,"Primary Email Opt Out",integer
+No,checkCall,"Consent Opt-Out Call",integer
+No,primaryconsentdonotdialdate,"Primary Do Not Call Consent Date",datetime
+No,secondaryconsentDoNotCall,"Secondary Do Not Call Consent",integer
+No,secondaryconsentDoNotCallDate,"Secondary Do Not Call Consent Date",datetime
+No,primaryconsentaffiliate,"Primary Affiliate Marketing Opt-Out",integer
+No,primaryconsentmail,"Primary Mail Opt-Out",integer
+No,primaryconsentTCPAdate,"Primary TCPA Consent Date",datetime
+No,primaryconsentDNCdate,"Primary Do Not Contact Date",datetime
+No,primaryconsenttextdate,"Primary Text Opt Out Date",date
+No,primaryconsentaffiliatedate,"Primary Affiliate Marketing Opt-Out Date",date
+No,primaryconsentemaildate,"Primary Email Opt Out Date",date
+No,primaryconsentmaildate,"Primary Mail Opt Out Date",date
+No,secondaryconsentTCPA,"Secondary TCPA Consent",integer
+No,secondaryconsentDNC,"Secondary Do Not Contact",integer
+No,secondaryconsenttext,"Secondary Text Opt Out",integer
+No,secondaryconsentemail,"Secondary Email Opt Out",integer
+No,secondaryconsentaffiliate,"Secondary Affiliate Marketing Opt-Out",integer
+No,secondaryconsentmail,"Secondary Mail Opt-Out",integer
+No,secondaryconsentTCPAdate,"Secondary TCPA Consent Date",datetime
+No,secondaryconsentDNCdate,"Secondary Do Not Contact Date",datetime
+No,secondaryconsenttextdate,"Secondary Text Opt Out Date",datetime
+No,secondaryconsentaffiliatedate,"Secondary Affiliate Marketing Opt-Out Date",datetime
+No,secondaryconsentemaildate,"Secondary Email Opt Out Date",datetime
+No,secondaryconsentmaildate,"Secondary Mail Opt Out Date",datetime
+No,trkloanstatusdate,"Loan Status Date",date
+No,trkloanlastupdatedate,"Date Loan Last Updated",date
+No,trkloanfolder,"Loan Folder",string
+No,trkAUSRecommendation,"AUS Recommendation",string
+No,trkloansubstatus,"Loan Substatus",string
+No,trkloantypedescription,"Loan Type Description",date
+No,ProgramTypeDescription,"Program Description",string
+No,trkpreviousLoName,"Previous LO Name",string
+No,trkpreviousLoNMLS,"Previous LO NMLS",string
+No,trkpreviousInstanceId,"Previous Shape Instance ID",string
+No,trkpreviousShapeLeadId,"Previous LO NMLS",string
+No,trknewLoName,"New LO Name",string
+No,trknewLoNMLS,"New LO NMLS",string
+No,trknewInstanceId,"New Shape Instance ID",string
+No,trknewShapeLeadId,"New Shape Lead ID",string
+No,pclhomePrice,"Payment Calculator Home Price",txtCurrency
+No,pcldownPayment,"Payment Calculator Down Payment",string
+No,pcldownPmtAmount,"Payment Calculator Down Payment Amount",txtCurrency
+No,pclloanAmount,"Payment Calculator Loan Amount",txtCurrency
+No,pclmortgageTerm,"Payment Calculator Mortgage Term",string
+No,pclannualInterestRate,"Payment Calculator Annual Interest Rate",string
+No,trmnoOfProperties,"Term Sheet Number of properties",string
+No,trmpropertyAddress,"Term Sheet Subject Property Address",string
+No,trmpropertyCity,"Term Sheet Property City",string
+No,trmpropertyState,"Term Sheet Property State",string
+No,trmpropertyZipCode,"Term Sheet Property Zip Code",string
+No,trmloanPurpose,"Term Sheet Loan Purpose",string
+No,trmloanType,"Term Sheet Loan Type",string
+No,trmpropertyType,"Term Sheet Property Type",string
+No,trmentityName,"Term Sheet Entity Name",string
+No,trmficoScore,"Term Sheet FICO Score",string
+No,trmexperience,"Term Sheet Experience",string
+No,trmloanAmountUseMax,"Term Sheet Loan Amount (Use Max)",boolean
+No,trmloanAmountManual,"Term Sheet Loan Amount (Manual)",txtCurrency
+No,trmasIsValue,"Term Sheet As is Value",txtCurrency
+No,trmpurchasePrice,"Term Sheet Purchase Price",txtCurrency
+No,trmrehabBudget,"Term Sheet Rehab Budget",txtCurrency
+No,trmhasConstructionStarted,"Term Sheet Has Construction Started",string
+No,trmhardCostInvested,"Term Sheet Hard Cost Invested to date",txtCurrency
+No,trmafterRepairValue,"Term Sheet After Repair Value",txtCurrency
+No,trmexistingPayOff,"Term Sheet Existing PayOff",txtCurrency
+No,trmestimateMonthlyRent,"Term Sheet Estimated Monthly Rent",txtCurrency
+No,trmpropertyTaxesAnnual,"Term Sheet Property Taxes (Annual)",txtCurrency
+No,trmpropertyInsuranceAnnual,"Term Sheet Property Insurance (Annual)",txtCurrency
+No,trmpropertyHOA,"Term Sheet Property HOA (Monthly)",txtCurrency
+No,trmbrokerFee,"Term Sheet Broker Fee",string
+No,trmprocessingFee,"Term Sheet Processing Fee",txtCurrency
+No,trmotherFees,"Term Sheet Other Fee",txtCurrency
+No,trmexitFee,"Term Sheet Exit Fee",txtCurrency
+No,trmadditionalInfo,"Term Sheet Additional Information",string
+No,refprCompanyAddress,"Partner Company Address",string
+No,refprCoCity,"Partner Company City",string
+No,refprCoState,"Partner Company State",string
+No,refprCoZipCode,"Partner Company Zip",string
+No,refprStreetAddress,"Partner Mailing Address",string
+No,refprCity,"Partner Mailing City",string
+No,refprState,"Partner Mailing State",string
+No,refprZipCode,"Partner Mailing Zip",string
+No,cuStreetAdddress,"Partner Physical Address",string
+No,refzip,"Partner Physical Zip",string
+No,refinterestshobbies,"Partner Personal Interests & Hobbies",string
+No,refimportantnotes,"Whats Important to Them?",string
+No,checkTCPA,"Consent Opt-Out TCPA",integer
+No,checkDNC,"Consent Opt-Out DNC",integer
+No,checkText,"Consent Opt-Out Text",integer
+No,checkEmail,"Consent Opt-Out Email",integer
+No,checkMail,"Consent Opt-Out Mail",integer
+No,spanishspeak,"Spanish Speaking",integer
+No,chinesespeak,"Chinese Speaking",boolean
+No,englishspeak,English,integer
+No,koreanspeak,Korean,integer
+No,tagalogspeak,Tagalog,integer
+No,vietnamesespeak,Vietnamese,integer
+No,otherspeak,"Other Language",boolean
+No,contactMathod,"Best Contact Method",string
+No,qkapppurpose,Purpose,string
+No,currntintrstrate,"Current Interest Rate",txtDecimal
+No,rateType,"Current Rate Type",string
+No,targetRate,"Target Rate",txtDecimal
+No,targetRatetype,"Target Rate Type",string
+No,intratequoted,"Rate Quoted",txtDecimal
+No,lonamtexistlien,"Current Loan Balance",txtCurrency
+No,currentMortgageProgram,"Current Mortgage Program",string
+No,leadcuMonthlyPayment,"Current Monthly Payment",txtCurrency
+No,proposedpmt,"Proposed Payment",txtCurrency
+No,monthlysavings,"Money Saved",txtCurrency
+No,estCompensation,"Estimated Compensation",txtCurrency
+No,loanDate,"Loan Date",datetime
+No,ledliquidassets,"Liquid Assets",string
+No,altemailaddress,"Alternate Email",string
+No,leddti,DTI,txtDecimal
+No,ledentityName,"Entity Name",string
+No,incometypequalification,"Lead Income Type",string
+No,ledentityType,"Entity Type",string
+No,workwithrealtor,"Working With Realtor?",string
+No,lonownedproperty,"Owned Property In Last 3 Years?",string
+No,lonbankruptcy,"Bankruptcy In Last 7 Years?",string
+No,lonbanckruptcyfiledate,"Bankruptcy File Date",datetime
+No,londischargedate,"Bankruptcy Discharge Date",datetime
+No,reasonOfLoan,"Goals & Objectives",text
+No,realtorId,"Referral Partner Id",string
+No,rellendername,Lender,string
+No,ledalertSource,"Alert Source",string
+No,ledalertType,"Alert Type",string
+No,ledalertDate,"Alert Date",datetime
+No,ledalertDescription,"Alert Description",string
+No,alertleadid,"Alert Lead ID",string
+No,alertid,"Alert ID",string
+No,alertintelid,"Alert Intel ID",string
+No,alerttypeid,"Alert Type ID",string
+No,alertpageurl,"Alert Page URL",string
+No,refId,"Reference Id",string
+No,tcaVideoLink,"LO Presentation Link",string
+No,tcaBorrowerLink,"Client-Facing Presentation Link",string
+No,posid,"Point of Sale ID",string
+No,LastAppointmentDate,"Last Appointment Date",datetime
+No,NextAppointmentDate,"Next Appointment Date",datetime
+No,loan_estAppraisalVal,"Appraisal Value",string
+No,prozestimate,Zestimate,txtCurrency
+No,prostreetviewLink,"Street View Link",string
+No,procostarLink,"Costar Link",string
+No,prolastsoldDate,"Last Sold Date",datetime
+No,prolastsoldYear,"Last Sold Year",string
+No,prolastsoldPrice,"Last Sold Price",txtCurrency
+No,prolisted,Listed,string
+No,proestimatedCOE,"Estimated COE",datetime
+No,prolotszsqfoot,"Square Footage Added",string
+No,profinprosqfoot,"Finished Property Square Footage",string
+No,proaddingUnits,"Adding Units?",string
+No,proaddingSquarefootage,"Adding Square Footage?",string
+No,pronumberOfunitsAdded,"Number of Units Added",string
+No,pronumofbedRooms,"Number of Bedrooms",string
+No,pronumofbathRooms,"Number of Bathrooms",string
+No,propreferredEquityAmt,"Equity Amount Requested",txtCurrency
+No,proborroweropinion,"Borrower Opinion Value",txtCurrency
+No,protaxasses,"Tax Assessment",string
+No,propropertyUse,"Intended Use & Occupancy",string
+No,prooccupancy,Occupancy,string
+No,prolastRefinencedDate,"Last Refinanced Date",datetime
+No,pronotes,"Property Notes",string
+No,ledcurrentPayoff,"Current Payoff",txtCurrency
+No,ledorgPurchaseprice,"Original Purchase Price",txtCurrency
+No,ledorgPurchaseDate,"Original Purchase Date",datetime
+No,ledmortgageStatus,"Mortgage Status",string
+No,zillowurlproperty,"Zillow URL Link",text
+No,taxassesyrs,"Tax Assessment Year",string
+No,lotszsqfoot,"Lot Size Square Footage",string
+No,finprosqfoot,"Finished Property Square Footage",string
+No,relbuyingagentname,"Buying Agent",string
+No,relsellingagentname,"Selling Agent",string
+No,relbuyingagentemail,"Buying Agent Email",string
+No,relbuyingagentID,"Buying Agent Id",string
+No,relbrokeremail,"Broker Email",string
+No,relbrokerphone,"Broker Mobile Phone",string
+No,relsellingagentID,"Selling Agent Id",string
+No,relbrokername,Broker,string
+No,relbuyingagentcompany,"Buying Agent Company",string
+No,relbuyingAttorneycompany,"Buyer Attorney Company",string
+No,relsellerAttorneycompany,"Seller Attorney Company",string
+No,relcpacompany,"CPA Company",string
+No,relcpacoaddress,"CPA Company Address",string
+No,relsellingagentcoaddress,"Selling Agent Company Address",string
+No,relbuyingagentcoaddress,"Buying Agent Company Address",string
+No,relbuyingAttorneycoaddress,"Buyer Attorney Company Address",string
+No,relsellerAttorneycoaddress,"Seller Attorney Company Address",string
+No,reltitlecontactcompany,"Title Agent Company",string
+No,relbuildercompany,"Builder Company",string
+No,relbrokercompany,"Broker Company",string
+No,relbrokercoaddress,"Broker Company Address",string
+No,relbrokercocity,"Broker Company City",string
+No,relbrokercostate,"Broker Company State",string
+No,relbrokercozip,"Broker Company Zip",string
+No,relbuildercoaddress,"Builder Company Address",string
+No,relcpacocity,"CPA Company City",string
+No,relcpacostate,"CPA Company State",string
+No,relcpacozip,"CPA Company Zip",string
+No,relbuildercocity,"Builder Company City",string
+No,relbuildercostate,"Builder Company State",string
+No,relbuildercozip,"Builder Company Zip",string
+No,relbuilderfax,"Builder Fax",string
+No,reltitlecontactcoaddress,"Title Agent Company Address",string
+No,relbuyingagentcocity,"Buying Agent Company City",string
+No,relsellingagentcocity,"Selling Agent Company City",string
+No,relbuyingAttorneycocity,"Buyer Attorney Company City",string
+No,relsellerAttorneycocity,"Seller Attorney Company City",string
+No,reltitlecontactcocity,"Title Agent Company City",string
+No,reltitlecontactcostate,"Title Agent Company State",string
+No,reltitlecontactcozip,"Title Agent Company Zip",string
+No,relbuyingagentcostate,"Buying Agent Company State",string
+No,relsellingagentcostate,"Selling Agent Company State",string
+No,relbuyingAttorneycostate,"Buyer Attorney Company State",string
+No,relsellerAttorneycostate,"Seller Attorney Company State",string
+No,relbuyingagentcozip,"Buying Agent Company Zip",string
+No,relsellingagentcozip,"Selling Agent Company Zip",string
+No,relbuyingAttorneycozip,"Buyer Attorney Company Zip",string
+No,relsellerAttorneycozip,"Seller Attorney Company Zip",string
+No,relsellingagentemail,"Selling Agent Email",string
+No,relsellingagentphone,"Selling Agent Mobile Phone",string
+No,relsellingagentworkphone,"Selling Agent Work Phone",string
+No,relsellingagentlicensenum,"Selling Agent License Number",string
+No,relbuyingagentlicensenum,"Buying Agent License Number",string
+No,relbuyingagentcrmid,"Buying Agent CRM ID",string
+No,relsellingagentcrmid,"Selling Agent CRM ID",string
+No,relsellingagentcompanyid,"Buying Agent Company ID",string
+No,relbuyingagentcompanyid,"Selling Agent Company ID",string
+No,relbuyertransactioncoordinatoremail,"Buyer's Transaction Coordinator Email",string
+No,relbuyertransactioncoordinatorphone,"Buyer's Transaction Coordinator Mobile Phone",string
+No,relsellerTransactionCoordinatorname,"Seller's Transaction Coordinator Contact Name",string
+No,relsellerTransactionCoordinatoremail,"Seller's Transaction Coordinator Email",string
+No,relsellerTransactionCoordinatorphone,"Seller's Transaction Coordinator Mobile Phone",string
+No,reltitlecontacename,"Title Agent",string
+No,relinsurancename,Insurance,string
+No,relinsurancecontactphone,"Insurance Contact Mobile Phone",string
+No,relinsurancecontactemail,"Insurance Contact Email",string
+No,relinsurancecontactWorkphone,"Insurance Contact Work Phone",string
+No,relinsurancecontactcompany,"Insurance Contact Company",string
+No,reltitlecontacemail,"Title Contact Email",string
+No,reltitlecontactphone,"Title Contact Mobile Phone",string
+No,reltitlecontactWorkphone,"Title Agent Work Phone",string
+No,relescrowcontactname,"Escrow Contact Name",string
+No,relescrowcontactemail,"Escrow Contact Email",string
+No,relescrowcontactphone,"Escrow Contact Mobile Phone",string
+No,relappraisername,"Appraiser Contact Name",string
+No,relclosingagentname,"Closing Agent",string
+No,relappraiseremail,"Appraiser Email",string
+No,relappraiserphone,"Appraiser  Mobile Phone",string
+No,reltermitecontactname,"Termite Contact Name",string
+No,reltermitecontactemail,"Termite Contact Email",string
+No,reltermitecontactphone,"Termite Contact Mobile Phone",string
+No,relhomeinspecontname,"Home Inspection Contact Name",string
+No,relhomeinspecontemail,"Home Inspection Contact Email",string
+No,relhomeinspecontphone,"Home Inspection Mobile Phone",string
+No,leadrealtorrefname,"Realtor Referral Name",string
+No,realtorreferral,"Referral Partner",string
+No,relsellingagentcompany,"Selling Agent Company",string
+No,relbuyingAttorneyID,"Buyer Attorney Id",string
+No,relbuyingAttorneyname,"Buyer Attorney",string
+No,relbuyingAttorneyemail,"Buyer Attorney Email",string
+No,relbuyingAttorneyphone,"Buyer Attorney Mobile Phone",string
+No,relsellerAttorneyname,"Seller Attorney",string
+No,relsellerAttorneyemail,"Seller Attorney Email",string
+No,relsellerAttorneyphone,"Seller Attorney Mobile Phone",string
+No,relsettlementAttorneyname,"Settlement Attorney Contact Name",string
+No,relsettlementAttorneyemail,"Settlement Attorney Email",string
+No,relsettlementAttorneyphone,"Settlement Attorney Mobile Phone",string
+No,relservicerAttorneyname,"Servicer Name",string
+No,relservicerAttorneyemail,"Servicer Email",string
+No,relservicerAttorneyphone,"Servicer Mobile Phone",string
+No,relcreditRepairname,"Credit Repair Specialist Contact Name",string
+No,relcreditRepairemail,"Credit Repair Specialist Email",string
+No,relcreditRepairphone,"Credit Repair Specialist Mobile Phone",string
+No,relcpaname,CPA,string
+No,relcpaemail,"CPA Email",string
+No,relcpaphone,"CPA Mobile Phone",string
+No,relbuildername,Builder,string
+No,relbuilderemail,"Builder Email",string
+No,relbuilderphone,"Builder Mobile Phone",string
+No,relotherContectsname,"Other Contact Name",string
+No,relbuyertransactioncoordinatorname,"Buyer's Transaction Coordinator Contact Name",string
+No,relotherContectsemail,"Other Contact Email",string
+No,relotherContectsphone,"Other Contact Mobile Phone",phone
+No,relwholesaleLending,"Wholesale Lending Rep Contact Name",string
+No,relwholesaleLendingemail,"Wholesale Lending Rep Email",string
+No,rellendermail,"Lender Email",string
+No,rellenderphone,"Lender Phone",string
+No,relwholesaleLendingphone,"Wholesale Lending Rep Phone",string
+No,relthirdParty,"Third Party Originator Contact Name",string
+No,relthirdPartyemail,"Third Party Originator Email",string
+No,relthirdPartyphone,"Third Party Originator Phone",string
+No,relvendor,"Vendor Contact Name",string
+No,relvendoremail,"Vendor Email",string
+No,relvendorphone,"Vendor Phone",string
+No,relambassador,"Ambassador Contact Name",string
+No,relambassadoremail,"Ambassador Email",string
+No,relambassadorphone,"Ambassador Phone",string
+No,bormiddlename,"Borrower Middle Name",string
+No,borsuffix,"Borrower Suffix",string
+No,borbestcontactmethod,"Borrower Best Contact Method",string
+No,borcitizenship,"Borrower Citizenship",string
+No,borethnicity,"Borrower Ethnicity",string
+No,borrace,"Borrower Race",string
+No,borgender,"Borrower Gender",string
+No,bordatebirth,"Borrower Date of Birth",date
+No,borage,"Borrower Age",string
+No,borssn,"Borrower SSN",string
+No,borcreditscore,"Borrower Credit Score",string
+No,borcreditRating,"Borrower Credit Rating",string
+No,boryearsInschool,"Borrower Years in School",string
+No,bormaritalstatusdetails,"Borrower Marital Status",string
+No,bornumOfdepend,"Borrower Number of Dependents",string
+No,borageOfdepend,"Borrower Age of Dependents",string
+No,bornickName,"Borrower Nickname",string
+No,boryearsAtpresent,"Borrower Years at Present Address",string
+No,bormonthsAtCurrent,"Borrower Months at Present Address",string
+No,boryearsAtformer,"Borrower Years at Former Address",string
+No,bormonthsAtformer,"Borrower Months at Former Address",string
+No,borchkrenting,"Borrower Renting",boolean
+No,boraddress,"Present Address",string
+No,borcity,"Present City",string
+No,borstate,"Present State",string
+No,borzip,"Present Zip",string
+No,borformeraddress,"Borrower Former Address",string
+No,borformercity,"Borrower Former City",string
+No,borformerstate,"Borrower Former State",string
+No,borformerzip,"Borrower Former Zip",string
+No,currentMonthlyPmt,"Current Monthly Amount - (QuickApp)",txtCurrency
+No,cbicoborrowerfullname,"Co-Borrower Full Name",string
+No,cbiFirstName,"Co-Borrower First Name",string
+No,cbiMiddleName,"Co-Borrower Middle Name",string
+No,cbiLastName,"Co-Borrower Last Name",string
+No,cbiSuffix,"Co-Borrower Suffix",string
+No,cbiemailAddress,"Co-Borrower Email",string
+No,cbimobilePhone,"Co-Borrower Mobile Phone",phone
+No,cbiHomePhone,"Co-Borrower Home Phone",phone
+No,cbiworkphone,"Co-Borrower Work Phone",phone
+No,cbicontactMethod,"Co-Borrower Best Contact Method",string
+No,cobcitizenship,"Co-Borrower Citizenship",string
+No,cobethnicity,"Co-Borrower Ethnicity",string
+No,cobrace,"Co-Borrower Race",string
+No,cobgender,"Co-Borrower Gender",string
+No,cbibirthDate,"Co-Borrower Date of Birth",date
+No,cbiage,"Co-Borrower Age",string
+No,cbiSsn,"Co-Borrower SSN",string
+No,cbicreditscore,"Co-Borrower Credit Score",string
+No,cbiborrowerrelationship,"Co-Borrower Relationship to Borrower",string
+No,otherFirstName,"Other Contact Details First Name",string
+No,otherLastName,"Other Contact Details Last Name",string
+No,otherMobilePhone,"Other Contact Details Mobile Phone",string
+No,otherEmail,"Other Contact Details Email",string
+No,otherborrowerrelationship,"Other Contact Details Relationship to Borrower",string
+No,othercontactMethod,"Other Contact Details Best Contact Method",string
+No,otherDecisionMaker,"Other Contact Details Decision Maker?",string
+No,cobcreditRating,"Co-Borrower Credit Rating",string
+No,cobyearsInschool,"Co-Borrower Years in School",string
+No,qkappcbimaritalstatus,"Co-Borrower Marital Status",string
+No,cobnumOfdepend,"Co-Borrower Number of Dependents",string
+No,coborageOfdepend,"Co-Borrower Age of Dependents",string
+No,cobsalutation,"Co-Borrower Salutation",string
+No,cobnickName,"Co-Borrower Nickname",string
+No,cobyearsAtpresent,"Co-Borrower Years at Present Address",string
+No,cobmonthsAtCurrent,"Co-Borrower Months at Present Address",string
+No,cobyearsAtformer,"Co-Borrower Years at Former Address",string
+No,cobmonthsAtformer,"Co-Borrower Months at Former Address",string
+No,cobcobchkrenting,"Co-Borrower Renting",boolean
+No,cobformeraddress,"Co-Borrower Former Address",string
+No,cobformercity,"Co-Borrower Former City",string
+No,cobformerstate,"Co-Borrower Former State",string
+No,cobformerzip,"Co-Borrower Former Zip",string
+No,borselfEmployed,"Borrower Self Employed",integer
+No,boremployer,"Borrower Employer Name",string
+No,borempinfoEmpType,"Borrower Employment Type",string
+No,borempinfoEmpPosition,"Borrower Employment Position",string
+No,boryearsInwork,"Borrower Years In Work",string
+No,boryearsonjob,"Borrower Years on Job",string
+No,bormonthsonjob,"Borrower Months on Job",string
+No,borempPhone,"Borrower Employer Phone",string
+No,borempEmail,"Borrower Employer Email",string
+No,borempaddress,"Borrower Employer Address",string
+No,borempcity,"Borrower Employer City",string
+No,borempstate,"Borrower Employer State",string
+No,borempzip,"Borrower Employer Zip",string
+No,cobemployer,"Borrower Former Employer Name",string
+No,cobempinfoEmpType,"Borrower Former Employment Type",string
+No,cobempPosition,"Borrower Former Employment Position",string
+No,cobmonthlyIncome,"Borrower Former Monthly Income",string
+No,cobformDate,"Borrower Employment Start Date",datetime
+No,cobtoDate,"Borrower Employment End Date",datetime
+No,cobempPhone,"Borrower Former Employer Phone",string
+No,cobempEmail,"Borrower Former Employer Email",string
+No,cobempaddress,"Borrower Former Employer Address",string
+No,cobempcity,"Borrower Former Employer City",string
+No,cobempstate,"Borrower Former Employer State",string
+No,cobempzip,"Borrower Former Employer Zip",string
+No,cobcbeselfEmployed,"Co-Borrower Self Employed",integer
+No,cbeemployerName,"Co-Borrower Employer Name",string
+No,cbeEmploymentType,"Co-Borrower Employment Type",string
+No,cbeemployerPosition,"Co-Borrower Employment Position",string
+No,cbeyearsInwork,"Co-Borrower Years In Work",string
+No,cbeyearOnJob,"Co-Borrower Years on Job",integer
+No,cbemonthsOnJob,"Co-Borrower Months on Job",integer
+No,cbeEmpPhone,"Co-Borrower Employer Phone",string
+No,cbeEmpEmail,"Co-Borrower Employer Email",string
+No,cbeEmpaddress,"Co-Borrower Employer Address",string
+No,cbeEmpcity,"Co-Borrower Employer City",string
+No,cbeEmpstate,"Co-Borrower Employer State",string
+No,cbeEmpzip,"Co-Borrower Employer Zip",string
+No,cbiemployerName,"Co-Borrower Former Employer Name",string
+No,cbiEmploymentType,"Co-Borrower Former Employment Type",string
+No,cbiPosition,"Co-Borrower Former Employment Position",string
+No,cbemonthlyIncome,"Co-Borrower Former Monthly Income",string
+No,cbeformDate,"Co-Borrower Former Employment From Date",datetime
+No,cbetoDate,"Co-Borrower Former Employment To Date",datetime
+No,cbiEmpPhone,"Co-Borrower Former Employer Phone",string
+No,cbiEmpEmail,"Co-Borrower Former Employer Email",string
+No,cbiEmpaddress,"Co-Borrower Former Employer Address",string
+No,cbiEmpcity,"Co-Borrower Former Employer City",string
+No,cbiEmpstate,"Co-Borrower Former Employer State",string
+No,cbiEmpzip,"Co-Borrower Former Employer Zip",string
+No,borbaseEmpincome,"Borrower Base Employment Income",txtCurrency
+No,borrower_overtime,"Borrower Overtime",txtCurrency
+No,borrower_commissions,"Borrower Commissions",txtCurrency
+No,borrower_dividends_interest,"Borrower Dividends/Interest",string
+No,borrower_net_rental_income,"Borrower Net Rent",string
+No,borrower_social_security_income,"Social Security Income",string
+No,borpension,"Borrower Pension",string
+No,borotherincomeType,"Borrower Other Income Type",string
+No,borotherdescription,"Borrower Other Income Description",string
+No,borotherincome,"Borrower Other Income Amount",txtCurrency
+No,oth_borotherincomeType1,"Borrower Other Income Type 1",string
+No,oth_borotherdescription1,"Borrower Other Income Description 1",string
+No,oth_borotherincome1,"Borrower Other Income Amount 1",txtCurrency
+No,oth_borotherincomeType2,"Borrower Other Income Type 2",string
+No,oth_borotherdescription2,"Borrower Other Income Description 2",string
+No,oth_borotherincome2,"Borrower Other Income Amount 2",txtCurrency
+No,oth_borotherincomeType3,"Borrower Other Income Type 3",string
+No,oth_borotherdescription3,"Borrower Other Income Description 3",string
+No,oth_borotherincome3,"Borrower Other Income Amount 3",txtCurrency
+No,oth_borotherincomeType4,"Borrower Other Income Type 4",string
+No,oth_borotherdescription4,"Borrower Other Income Description 4",string
+No,oth_borotherincome4,"Borrower Other Income Amount 4",txtCurrency
+No,borgrossannualincome,"Borrower Gross Annual Income",txtCurrency
+No,borproofofincome,"Borrower Proof of Income?",string
+No,bortotalIncome,"Borrower Total Income",txtCurrency
+No,bortotalExpenses,"Borrower Total Expenses",string
+No,borrower_current_debt_amount,"Borrower Current Debt Amount",txtCurrency
+No,bormonthlydebtpayment,"Borrower Monthly Debt Payments",txtCurrency
+No,cobbaseEmpincome,"Co-Borrower Base Employment Income",txtCurrency
+No,co_borrower_overtime,"Co-Borrower Overtime",txtCurrency
+No,co_borrower_commissions,"Co-Borrower Commissions",txtCurrency
+No,co_borrower_dividends_interest,"Co-Borrower Dividends/Interest",string
+No,co_borrower_net_rental_income,"Co-Borrower Net Rent",string
+No,co_borrower_social_security_income,"Co-Borrower Social Security Income",string
+No,cbipension,"Co-Borrower Pension",string
+No,cobotherincomeType,"Co-Borrower Other Income Type",string
+No,cobotherdescription,"Co-Borrower Other Income Description",string
+No,cbeotherIncome,"Co-Borrower Other Income Amount",txtCurrency
+No,cotr_cobotherincomeType1,"Co-Borrower Other Income Type 1",string
+No,cotr_cobotherdescription1,"Co-Borrower Other Income Description 1",string
+No,cotr_cbeotherIncome1,"Co-Borrower Other Income Amount 1",txtCurrency
+No,cotr_cobotherincomeType2,"Co-Borrower Other Income Type 2",string
+No,cotr_cobotherdescription2,"Co-Borrower Other Income Description 2",string
+No,cotr_cbeotherIncome2,"Co-Borrower Other Income Amount 2",txtCurrency
+No,cotr_cobotherincomeType3,"Co-Borrower Other Income Type 3",string
+No,cotr_cobotherdescription3,"Co-Borrower Other Income Description 3",string
+No,cotr_cbeotherIncome3,"Co-Borrower Other Income Amount 3",txtCurrency
+No,cotr_cobotherincomeType4,"Co-Borrower Other Income Type 4",string
+No,cotr_cobotherdescription4,"Co-Borrower Other Income Description 4",string
+No,cotr_cbeotherIncome4,"Co-Borrower Other Income Amount 4",txtCurrency
+No,cbigrossannualincome,"Co-Borrower Gross Annual Income",txtCurrency
+No,cbiproofofincome,"Co-Borrower Proof of Income?",string
+No,cobtotalIncome,"Co-Borrower Total Income",txtCurrency
+No,cobtotalExpenses,"Co-Borrower Total Expenses",string
+No,co_borrower_current_debt_amount,"Co-Borrower Current Debt Amount",txtCurrency
+No,cbimonthlydebtpayment,"Co-Borrower Monthly Debt Payments",txtCurrency
+No,boraddressbasic,"Borrower Subject Property Address",string
+No,borcitybasic,"Borrower Subject City",string
+No,borstatebasic,"Borrower Property State",string
+No,borzipbasic,"Borrower Subject Zip",string
+No,borcountybasic,"Borrower Subject County",string
+No,qkapppropertyType,"Property Type",integer
+No,qkappnumberOfunits,"Number of Units",string
+No,cobyearBuilt,"Year Built",string
+No,borpurpose,"Purpose (QA)",string
+No,cobpropertyUse,"Intended Property Use (QA)",integer
+No,qkappestAppraisalVal,"Estimated Appraisal Value",txtCurrency
+No,borpurchasePrice,"Purchase Price",txtCurrency
+No,borborrowerNotes,"Legal Description of Property",string
+No,lonnameOfloan,"Name of Loan",string
+No,lonpurpose,"Loan Purpose",string
+No,attachmentType,"Attachment Type",string
+No,LoanAmount,"Loan Amount",txtCurrency
+No,lonloantype2,"Loan Type",string
+No,lonprogramtype,"Program Type",string
+No,lonloanterm,"Term (No. Of Months)",string
+No,bormortgageinterestRate,"Interest Rate",txtDecimal
+No,lonintrestonlyoption,"Interest Only Option Check",boolean
+No,lonratetype,"Interest Rate Type",string
+No,relinsurancecompany,"HOI Company Name",string
+No,hoiquoterequest,"HOI Quote Request",string
+No,hoiquoterequestmethod,"HOI Quote Request Method",string
+No,loan_note,"Note Rate",string
+No,lonfirstrateadjcap,"First Rate Adjustment Cap",string
+No,amortization_type,"Amortization Type",string
+No,lonarmtype,"ARM Type",string
+No,lonarmexpdate,"ARM Expiration Date",string
+No,lonloanlimit,"Loan Limit",string
+No,lonlifecap,"Life Cap",txtDecimal
+No,lonrefinancedate,"Refinance Date",datetime
+No,lonoriginalbalnc,"Original Loan Balance",txtCurrency
+No,loncurrentloanbalnc,"Current Loan Balance - (QuickApp)",txtCurrency
+No,lonrefipurpose,"Refinance Purpose",string
+No,lonrefinanceamt,"Refinance Amount (+Debts to be Paid Off)",txtCurrency
+No,loncashOutAmt,"Cash Out Amount",txtCurrency
+No,trmtotalloanAmount,"Total Loan Amount",txtCurrency
+No,lienposition,"Lien Position",string
+No,lonrenovationtype,"Renovation Type",string
+No,lonreficostimprove,"Refi Cost of Improvements",string
+No,lonimprovedesc,"Improvement Description",string
+No,lonyearlotreq,"Year Lot Acquired",string
+No,lonoriginallandcost,"Original Cost of Land",txtCurrency
+No,lonprice,"Loan Price",string
+No,lonoriginalcost,"Original Cost",txtCurrency
+No,lonconstructionimprovecosts,"Construction/Improvement Costs",txtCurrency
+No,lonpresentvallot,"Present Value of Lot",txtCurrency
+No,loncostofimprovement,"Improvement Costs",txtCurrency
+No,lontotalvalimprove,"Total Value Improvements",txtCurrency
+No,lonconstructionNotes,"Project Name",string
+No,lonprojectmanager,"Project Manager",string
+No,lonholderName,"Title Holder Name(s)",string
+No,loncurrentholderName,"Current Title Holder Name(s)",string
+No,docType,"Doc Type",string
+No,lonrefitype,"Refinance Type",string
+No,lonconstructionStatus,"Construction Status",string
+No,lonheldManner,"Title Held Manner",string
+No,lonestateheldManner,"Estate Held Manner",string
+No,lonratebuydown,"Interest Rate Buydown",string
+No,lonintrestonlymonths,"Interest Only Months",string
+No,lonimpoundwaiver,"Impound Waiver",string
+No,loanratelockedperc,"Locked Rate",txtDecimal
+No,dtifrontend,"Front-End DTI",txtDecimal
+No,lonalterimproverepair,Improvements,string
+No,ltv2,LTV,txtDecimal
+No,sellerConcessionPrice,"Seller Concession Price",txtCurrency
+No,sellerConcessionPercent,"Seller Concession Percent",string
+No,cltv2,CLTV,txtDecimal
+No,downpmtamount2,"Down Payment Amount",txtCurrency
+No,downpmtamountperctge2,"Down Payment Percentage",txtDecimal
+No,down_payment_type_code,"Down Payment Source",string
+No,lonestimatedcloseitem,"Estimated Closing Cost",string
+No,transpurchaseprice,"Transaction Purchase Price",string
+No,transalterations,"Transaction Alterations",string
+No,transland,"Transaction Land",string
+No,transrefi,"Transaction Refinance",string
+No,lonestimatedpreitm,"Transaction Estimated Prepaid items",string
+No,lonclosingcosts,"Transaction Closing Costs",string
+No,lonpmi,"Transaction PMI, MIP, Funding Fee",string
+No,londiscount,"Transaction Discount",string
+No,sfa2,"Transaction Subordinate Financing",string
+No,lonfinancingnotes,"Financing Description",string
+No,lonclosingcostpaid,"Seller Paid Closing Costs",string
+No,lonothercredits,"Transaction Other",string
+No,transloanamount,"Transaction Loan Amount",txtCurrency
+No,lonpmimipfinanced,"Transaction PMI, MIP Financed",string
+No,lonmortgagenotes,"Other Credit Description",string
+No,lonsettlementcharges,"Settlement Charges",string
+No,lonpmimipfund,"Funding Fees Financed",txtCurrency
+No,pmimipfund,"Transaction Other",string
+No,lonpmimipfundcheck,"Funding Fees Not Financed Check",boolean
+No,constructiontopermcheck,Construction-to-Permanent,boolean
+No,loanFICO,"Loan FICO",string
+No,renovationcheck,Renovation,boolean
+No,constructionloancheck,"Construction Loan",boolean
+No,conversionofcontractfordeedcheck,"Conversion of Contract for Deed or Land Contract",boolean
+No,lonmargin,Margin,txtDecimal
+No,lonmortindex,Index,txtCurrency
+No,srp2,SRP,string
+No,lonmarketvalue,Value,txtCurrency
+No,cobrent,"Present Rent",string
+No,coproposedrent,"Proposed Rent",string
+No,lanproposedFirst_mortgage,"Proposed First Mortgage P&I",string
+No,lanproposedOther_financing,"Proposed Other Financing",string
+No,lanproposedHOI,"Proposed HOI",string
+No,lanproposedSupplemental,"Proposed Supplemental",string
+No,lanproposedRealEstate_taxes,"Proposed Property Taxes",txtCurrency
+No,lanproposedMortgage_insurance,"Proposed Mortgage Insurance (MI)",string
+No,lanproposedHomeowner_assn_dues,"Proposed Association (HOA) Dues",string
+No,lanproposedOther_expense,"Proposed Other",string
+No,lanpresentFirst_mortgage,"Present First Mortgage P&I",string
+No,lanpresentOther_financing,"Present Other Financing",string
+No,lanpresentHOI,"Present HOI",string
+No,lanpresentSupplemental,"Present Supplemental",string
+No,lanpresentHazard_insurance,"Borrower Proposed Hazard Insurance",string
+No,lanpresentRealEstate_taxes,"Present Property Taxes",string
+No,lanpresentMortgage_insurance,"Present Mortgage Insurance (MI)",string
+No,lanpresentHomeowner_assn_dues,"Present Association (HOA) Dues",string
+No,lanpresentOther_expense,"Present Other",string
+No,cobcobor_rent,"Co-Borrower Proposed Rent",string
+No,cobcobor_present_first_mortgage,"Co-Borrower Proposed First Mortgage Principal & Interest",string
+No,cobcobor_present_other_financing,"Co-Borrower Proposed Other Financing",string
+No,cobcobor_present_hazard_insurance,"Co-Borrower Proposed Hazard Insurance",string
+No,cobcobor_present_real_estate_taxes,"Co-Borrower Proposed Real Estate Taxes",string
+No,cobcobor_present_mortgage_insurance,"Co-Borrower Proposed Mortgage Insurance",string
+No,cobcobor_present_homeowner_assn_dues,"Co-Borrower Proposed HOA Dues",string
+No,cobcobor_present_other_expense,"Co-Borrower Proposed Other Housing Expenses",string
+No,lanmontly_piti,"Monthly PITI",string
+No,bormontlyPiti1,"Existing 1st Rent",txtCurrency
+No,bormortgagePrincipal1,"Existing 1st First Mortgage (P&I)",txtCurrency
+No,borotherfinancing1,"Existing 1st Other Financing (P&I)",txtCurrency
+No,borhazardInsurance1,"Existing 1st Hazard Insurance",txtCurrency
+No,borestateTaxes1,"Existing 1st Real Estate Taxes",txtCurrency
+No,bormortgageInsurance1,"Existing 1st Mortgage Insurance",txtCurrency
+No,borhomeownerdues1,"Existing 1st HOA Dues",txtCurrency
+No,borotherExpense1,"Existing 1st Other",txtCurrency
+No,lender1,"Existing 1st Lender",string
+No,dateAcquired1,"Existing 1st Date Acquired",datetime
+No,borloanmodifydate,"Existing 1st Loan Modified Date",date
+No,bortimelypayment12mo,"Existing 1st Timely Payments 12 Months?",string
+No,mortgageProgram1,"Existing 1st Mortgage Program",string
+No,originalMortgage1,"Existing 1st Original Mortgage",string
+No,currentBalance1,"Existing 1st Current Balance",string
+No,loanremainterm1,"Existing 1st Loan Remaining Term",string
+No,interestRate1,"Existing 1st Interest Rate",string
+No,mifactor,"Existing 1st MI Factor",string
+No,combinedinterest1,"Existing 1st Combined Interest Rate",string
+No,estimatedltv1,"Existing 1st Estimated LTV",string
+No,cobcobor_montlyPiti1,"Co-Borrower Existing 1st Rent",txtCurrency
+No,cobcobor_mortgagePrincipal1,"Co-Borrower Existing 1st First Mortgage (P&I)",txtCurrency
+No,cobcobor_present_other_financing1,"Co-Borrower Existing 1st Other Financing (P&I)",string
+No,cobcobor_hazardInsurance1,"Co-Borrower Existing 1st Hazard Insurance",txtCurrency
+No,cobcobor_estateTaxes1,"Co-Borrower Existing 1st Real Estate Taxes",txtCurrency
+No,cobcobor_mortgageInsurance1,"Co-Borrower Existing 1st Mortgage Insurance",txtCurrency
+No,cobcobor_homeownerdues1,"Co-Borrower Existing 1st HOA Dues",txtCurrency
+No,cobcobor_otherExpense1,"Co-Borrower Existing 1st Other",txtCurrency
+No,cobcobor_lender1,"Co-Borrower Existing 1st Lender",string
+No,cobcobor_dateAcquired1,"Co-Borrower Existing 1st Date Acquired",datetime
+No,cobcobor_loanmodifydate,"Co-Borrower Existing 1st Loan Modified Date",date
+No,cobcobor_timelypayment12mo,"Co-Borrower Existing 1st Timely Payments 12 Months?",string
+No,cobcobor_mortgageProgram1,"Co-Borrower Existing 1st Mortgage Program",string
+No,cobcobor_originalMortgage1,"Co-Borrower Existing 1st Original Mortgage",string
+No,cobcobor_currentBalance1,"Co-Borrower Existing 1st Current Balance",string
+No,cobcobor_loanremainterm1,"Co-Borrower Existing 1st Loan Remaining Term",string
+No,cobcobor_interestRate1,"Co-Borrower Existing 1st Interest Rate",string
+No,cobcobor_mifactor,"Co-Borrower Existing 1st MI Factor",string
+No,cobcobor_combinedinterest1,"Co-Borrower Existing 1st Combined Interest Rate",string
+No,cobcobor_estimatedltv1,"Co-Borrower Existing 1st Estimated LTV",string
+No,bormontlyPiti2,"Existing 2nd Rent",txtCurrency
+No,bormortgagePrincipal2,"Existing 2nd First Mortgage (P&I)",txtCurrency
+No,borotherfinancing2,"Existing 2nd Other Financing (P&I)",txtCurrency
+No,borhazardInsurance2,"Existing 2nd Hazard Insurance",txtCurrency
+No,borestateTaxes2,"Existing 2nd Real Estate Taxes",txtCurrency
+No,bormortgageInsurance2,"Existing 2nd Mortgage Insurance",txtCurrency
+No,borhomeownerdues2,"Existing 2nd HOA Dues",txtCurrency
+No,borotherExpense2,"Existing 2nd Other",txtCurrency
+No,lender2,"Existing 2nd Lender",string
+No,dateAcquired2,"Existing 2nd Date Acquired",datetime
+No,loanmodifydate2,"Existing 2nd Loan Modified Date",string
+No,timelypayment12mo2,"Existing 2nd Timely Payments 12 Months?",string
+No,mortgageProgram2,"Existing 2nd Mortgage Program",string
+No,originalMortgage2,"Existing 2nd Original Mortgage",txtCurrency
+No,currentBalance2,"Existing 2nd Current Balance",txtCurrency
+No,loanremainterm2,"Existing 2nd Loan Remaining Term",string
+No,interestRate2,"Existing 2nd Interest Rate",txtDecimal
+No,mifactor2,"Existing 2nd MI Factor",txtDecimal
+No,combinedinterest2,"Existing 2nd Combined Interest Rate",txtDecimal
+No,estimatedltv2,"Existing 2nd Estimated LTV",txtDecimal
+No,relagentName,"Agent First Name",string
+No,relagentLastName,"Agent Last Name",string
+No,relagentPhone,"Agent Phone",phone
+No,relagentEmail,"Agent Email",string
+No,relipAddress,"Client IP Address",string
+No,reladditionalInfo,"Additional Information",string
+No,relcompanyName,"Referring Company",string
+No,relpersonPhone,"Referring Person Phone",phone
+No,relcmpFirstName,"Referring First Name",string
+No,relcmpLastName,"Referring Last Name",string
+No,relpersonEmail,"Referring Person Email",string
+No,bbaseincome,"Borrower Base Income",string
+No,bovertime,"Borrower Overtime",string
+No,bbonuses,"Borrower Bonuses",string
+No,bcommission,"Borrower Commissions",string
+No,bdividend,"Borrower Dividends/Interest",string
+No,bnetrent,"Borrower Net Rent",string
+No,bpension,"Borrower Income Pension",string
+No,bssi,"Borrower Income Social Security Income",string
+No,bother,"Borrower Other",string
+No,cobbaseincome,"Co-Borrower Base Income",string
+No,cobovertime,"Co-Borrower Overtime",string
+No,cobbonuses,"Co-Borrower Bonuses",string
+No,cobcommission,"Co-Borrower Commissions",string
+No,cobdividend,"Co-Borrower Dividends/Interest",string
+No,cobnetrent,"Co-Borrower Net Rent",string
+No,cobpension,"Co-Borrower Income Pension",string
+No,cobssi,"Co-Borrower Income Social Security Income",string
+No,cobother,"Co-Borrower Other",string
+No,contacttype,"Contact Type",integer
+No,comiddlename,"Middle Name",string
+No,homePhone,"Home Phone",phone
+No,workPhoneext,Extension,string
+No,refpartlastmeetingdate,"Partner Last Meeting Date",date
+No,refpartnextmeetingdate,"Partner Next Meeting Date",date
+No,refpartlastcommsdate,"Partner Last Communication Date",date
+No,refaltemail,"Alternate Email",string
+No,dateofbirth,"Date of Birth",string
+No,nmlo,NMLO,string
+No,cadre,"CA DRE",string
+No,ccvp,"CCVP Number",string
+No,approveddate,"Approved Date",date
+No,relation,"Title or Relation to Contact",string
+No,decisionmaker,"Decision Maker?",string
+No,contactnotes,"Contact Notes",longtext
+No,linkedin,Linkedin,string
+No,facebook,Facebook,string
+No,instagram,Instagram,string
+No,twitter,Twitter,string
+No,tiktok,TikTok,string
+No,youtube,YouTube,string
+No,whatsapp,WhatsApp,string
+No,othersocialmedia,"Other Social Media",string
+No,checkconnectedsocials,"Connected on Social Media Check",boolean
+No,refgiftsent,"Sent Gift?",string
+No,refgiftsentdate,"Gift Sent Date",datetime
+No,refgiftdetails,"Gift Details",string
+No,refcoapplicationlink,"Application Link",string
+No,refcobookinglink,"Booking Link",string
+No,refcoreviewslink,"Reviews Link",string
+No,refcozillowlink,"Zillow Link",string
+No,refcoretrURL,"RETR Profile URL",string
+No,refcoextcobrandlink,"External Co-Brand Link",string
+No,refoverallrank,"Partner Overall Rank",string
+No,refproductionvolume,"Partner Production Volume",string
+No,refmarketshare,"Partner Market Share",string
+No,refpartnervolume,"Partner Referral Volume",string
+No,reftotalunits,"Partner Total Units",string
+No,reftotalvolume,"Partner Total Volume",string
+No,refavgSoldPrice,"Partner Average Sold Price",string
+No,refdoublesidevol,"Partner Double Side Volume",string
+No,refcompWorkedWith,"Partner Companies Worked With",string
+No,reflicenseState,"Partner License State",string
+No,reflicenseExp,"Partner License Expiration",string
+No,refavgLoanAmount,"Partner Average Loan Amount",string
+No,refpurchaseCount,"Partner Purchase Count",string
+No,refpurchaseVolume,"Partner Purchase Volume",string
+No,refrefinanceCount,"Partner Refinance Count",string
+No,refrefinanceVolume,"Partner Refinance Volume",string
+No,refmonthsatCompany,"Partner Months At Company",string
+No,refconvPercent,"Partner Conventional %",string
+No,refvaPercent,"Partner VA %",string
+No,reffhaPercent,"Partner FHA %",string
+No,refactiveLicensecount,"Partner Active License Count",string
+No,reflendersWorkwith,"Partner Lenders Worked With",string
+No,refservlocation,"Partner Location",string
+No,reflistingsideperc,"Partner Listing Side",string
+No,refbuyersideperc,"Partner Buyer Side",string
+No,refdoublesideperc,"Partner Double Side",string
+No,refsoldcount,"Partner Sold Count",string
+No,refloancount,"Loan Count",string
+No,refloused,"Partner LO's Used",string
+No,refsellercount,"Seller Count",string
+No,refsellervolume,"Seller Volume",string
+No,refbuyercount,"Buyer Count",string
+No,refbuyervolume,"Buyer Volume",string
+No,refloloanvolume,"Loan Volume",string
+No,reflastloandate,"Last Loan Date",datetime
+No,reflastpuraddress,Address,string
+No,reflastsaleprice,"Sale Price",string
+No,reflastpuramount,"Last Purchase Loan Amount",string
+No,reflastBuyerone,"Buyer 1",string
+No,reflastBuyertwo,"Buyer 2",string
+No,reflastpurchaseagent,Agent,string
+No,reflastagentcompany,"Agent Company",string
+No,refconvloancount,"Conventional Loan Count",string
+No,refvaloancount,"VA Loan Count",string
+No,reffhaloancount,"FHA Loan Count",string
+No,refotherloancount,"Other Loan Count",string
+No,refthreemonthcount,"Loan Count (3 Months)",string
+No,refthreemonthvol,"Last 3 Months Volume",string
+No,reflasttransdate,"Last Transaction Date",datetime
+No,refloloancount,"Partner LO Loan Count",string
+No,refpartyearsofexperience,"Years of Experience",string
+No,refpartlicensedstates,"Total Licensed States",string
+No,reflicensenumb,"License Number",string
+No,refnmls,"Partner NMLS",string
+No,refotherlicensenumb,"Partner Other License Number",string
+No,refcompanyid,"Partner Company ID",string
+No,cosalesmatchlink,"Partner Salesmatch Link",string
+No,conmlsconsumeraccesslink,"Partner NMLS Consumer Access Link",string
+No,conpartnerbranch,Branch,string
+No,conpartnerregional,"Partner Regional",string
+No,conpartnermanager,"Partner Manager",string
+No,refexternalleadid,"Partner External ID",string
+No,refcrmid,"Partner CRM ID",string
+No,concompanyname,"Company Name",string
+No,concompanytype,"Company Type",string
+No,conbustitle,Title,string
+No,condepartment,Department,string
+No,contfax,Fax,phone
+No,conwebsite,Website,string
+No,conNotes,"Company Notes",string
+No,inctotalassets,"Total Assets",txtCurrency
+No,inctotalliabilities,"Total Liabilities",txtCurrency
+No,incnetworth,"Net Worth",txtCurrency
+No,incdepositPurchase,"Cash Deposit for Purchase By",string
+No,incaccountType,"Borrower Assets Account Type",string
+No,incbankName,"Checking Bank Name",string
+No,incaccountnumber,"Borrower Assets Account Number",string
+No,inccashormarketvalue,"Borrower Assets Cash or Market Value",txtCurrency
+No,incbankAddress,"Checking Bank Address",string
+No,incbankCity,"Checking Bank City",string
+No,incbankState,"Checking Bank State",string
+No,incbankZip,"Checking Bank Zip",string
+No,incstockType,"Stock Type",string
+No,incinstitutionName,"Stocks Institution Name",string
+No,incstockMarketvalue,"Stock Market Value",string
+No,incstockCashvalue,"Stock Cash or Market Value",string
+No,incautomobileMake,"Automobiles Make",string
+No,incautomobileModel,"Automobiles Model",string
+No,incautomobileYear,"Automobiles Year",string
+No,incautomobileCashvalue,"Automobiles Cash or Market Value",string
+No,incestateAddress,"Real Estate Address",string
+No,incestateCity,"Real Estate City",string
+No,incestateState,"Real Estate State",string
+No,incestateZip,"Real Estate Zip",string
+No,incpropertyDisposition,"Real Estate Property Disposition",string
+No,incpropertyType,"Real Estate Type of Property",string
+No,incamountofmortgageliens,"Amount of Mortgages & Liens",txtCurrency
+No,incgrossRentalincome,"Real Estate Gross Rental Income",string
+No,incmortgagepayments,"Real Estate Mortgage Payments",string
+No,incinsurancemaintenancetaxes,"Insurance, Maintenance, Taxes, Misc",string
+No,incnetRentalincome,"Net Rental Income",string
+No,incmarketvalue,"Real Estate Present Market Value",txtCurrency
+No,incassetType,"Borrower Other Asset or Credit Type",string
+No,incdescription,"Asset Description",string
+No,incotherInstitution,"Borrower Assets Financial Institution",string
+No,incotherValue,"Borrower Other Asset Cash or Market Value",txtCurrency
+No,inctype,"Income Type",string
+No,incname,"Income Name",string
+No,incamount,"Income Amount",txtCurrency
+No,inccreditorname,"Outstanding Creditor Name",string
+No,incliabilitytype,"Liability Type",string
+No,incmonthslefttopay,"Outstanding Monthly Debt Payment",string
+No,incunpaidbalance,"Unpaid Balance",txtCurrency
+No,inccreditorAddress,"Outstanding Creditor Address",string
+No,inccreditorCity,"Outstanding Creditor City",string
+No,inccreditorState,"Outstanding Creditor State",string
+No,inccreditorZip,"Outstanding Creditor Zip",string
+No,incoutstandingAccountnumber,"Outstanding Account Number",string
+No,incoutstandingDescription,"Outstanding Description",string
+No,inclifeinsuranceCash,"Life Insurance Cash Value",string
+No,inclifeinsuranceFace,"Life Insurance Face Value",string
+No,incretirementFund,"Retirement Fund Cash Value",string
+No,increalEstatevalue,"Assets Real Estate Value",string
+No,incalimonyPayment,"Alimony Payment",string
+No,incchildSupportpayment,"Child Support Payment",string
+No,incseparateMaintence,"Separate Maintenance Payment",string
+No,incjobRelated,"Job Related Expenses",string
+No,inccobtotalassets,"Co-Borrower Total Assets",txtCurrency
+No,inccobtotalliabilities,"Co-Borrower Total Liabilities",txtCurrency
+No,inccobnetworth,"Co-Borrower Net Worth",txtCurrency
+No,inccobdepositPurchase,"Co-Borrower Cash Deposit for Purchase By",string
+No,inccobaccountType,"Co-Borrower  Assets Account Type",string
+No,inccobbankName,"Co-Borrower Checking Bank Name",string
+No,inccobaccountnumber,"Co-Borrower Assets Account Number",string
+No,inccobcashormarketvalue,"Co-Borrower Assets Cash or Market Value",txtCurrency
+No,inccobbankAddress,"Co-Borrower Checking Bank Address",string
+No,inccobbankCity,"Co-Borrower Checking Bank City",string
+No,inccobbankState,"Co-Borrower Checking Bank State",string
+No,inccobbankZip,"Co-Borrower Checking Bank Zip",string
+No,inccobstockType,"Co-Borrower Stock Type",string
+No,inccobinstitutionName,"Co-Borrower Stocks Institution Name",string
+No,inccobstockMarketvalue,"Co-Borrower Stock Market Value",string
+No,inccobstockCashvalue,"Co-Borrower Stock Cash or Market Value",string
+No,inccobautomobileMake,"Co-Borrower Automobiles Make",string
+No,inccobautomobileModel,"Co-Borrower Automobiles Model",string
+No,inccobautomobileYear,"Co-Borrower Automobiles Year",string
+No,inccobautomobileCashvalue,"Co-Borrower Automobiles Cash or Market Value",string
+No,inccobestateAddress,"Co-Borrower Real Estate Address",string
+No,inccobestateCity,"Co-Borrower Real Estate City",string
+No,inccobestateState,"Co-Borrower Real Estate State",string
+No,inccobestateZip,"Co-Borrower Real Estate Zip",string
+No,inccobpropertyDisposition,"Co-Borrower Real Estate Property Disposition",txtCurrency
+No,inccobpropertyType,"Co-Borrower Real Estate Type of Property",string
+No,inccobamountofmortgageliens,"Co-Borrower Amount of Mortgages & Liens",txtCurrency
+No,inccobgrossRentalincome,"Co-Borrower Real Estate Gross Rental Income",string
+No,inccobmortgagepayments,"Co-Borrower Real Estate Mortgage Payments",string
+No,inccobinsurancemaintenancetaxes,"Co-Borrower Insurance, Maintenance, Taxes, Misc",string
+No,inccobnetRentalincome,"Co-Borrower Net Rental Income",string
+No,inccobmarketvalue,"Co-Borrower Real Estate Present Market Value",txtCurrency
+No,inccobassetType,"Co-Borrower Other Asset or Credit Type",string
+No,inccobdescription,"Co-Borrower Asset Description",string
+No,inccobotherInstitution,"Co-Borrower Assets Financial Institution",string
+No,inccobotherValue,"Co-Borrower Other Asset Cash or Market Value",txtCurrency
+No,inccobtype,"Co-Borrower Income Type",string
+No,inccobname,"Co-Borrower Income Name",string
+No,inccobamount,"Co-Borrower Income Amount",txtCurrency
+No,inccobcreditorname,"Co-Borrower Outstanding Creditor Name",string
+No,inccobliabilitytype,"Co-Borrower Liability Type",string
+No,inccobmonthslefttopay,"Co-Borrower Outstanding Monthly Debt Payment",string
+No,inccobunpaidbalance,"Co-Borrower Unpaid Balance",txtCurrency
+No,inccobcreditorAddress,"Co-Borrower Outstanding Creditor Address",string
+No,inccobcreditorCity,"Co-Borrower Outstanding Creditor City",string
+No,inccobcreditorState,"Co-Borrower Outstanding Creditor State",string
+No,inccobcreditorZip,"Co-Borrower Outstanding Creditor Zip",string
+No,inccoboutstandingAccountnumber,"Co-Borrower Outstanding Account Number",string
+No,inccoboutstandingDescription,"Co-Borrower Outstanding Description",string
+No,inccoblifeinsuranceCash,"Co-Borrower Life Insurance Cash Value",string
+No,inccoblifeinsuranceFace,"Co-Borrower Life Insurance Face Value",string
+No,inccobretirementFund,"Co-Borrower Retirement Fund Cash Value",string
+No,inccobrealEstatevalue,"Co-Borrower Assets Real Estate Value",string
+No,inccobalimonyPayment,"Co-Borrower Alimony Payment",string
+No,inccobchildSupportpayment,"Co-Borrower Child Support Payment",string
+No,inccobseparateMaintence,"Co-Borrower Separate Maintenance Payment",string
+No,inccobjobRelated,"Co-Borrower Job Related Expenses",string
+No,mstrstatus1,"Lead Status",string
+No,mstrstatus16,"Contacts Status",string
+No,mstrstatus19,"Partner Status",string
+No,mstrstatus106,"LendingPad Status",string
+No,mstrstatus112,"Automated POS Portal Status Mirror",string
+No,mstrstatus421,"Activate Automatic Drip Campaigns Status",string
+No,mstrstatus427,"Launch File Help Requests Status",string
+No,mstrstatus429,"Portal Status",string
+No,mstrstatus430,"Marketing Drip Campaign Activators Status",string
+No,depursAa,"Administration User Name",string
+No,depursLo,"LOA User Name",string
+No,depursLi,"Loan Officer User Name",string
+No,depursPo,"Processor User Name",string
+No,customField_175,"Custom Field - Custom Dropdown Field",string
+No,customField_163,"Custom Field - Custom Dropdown Field",string
+No,customField_160,"Custom Field - Custom Field 5",string
+No,customField_157,"Custom Field - Next Steps",string
+No,customField_154,"Custom Field - Custom Field 3",string
+No,customField_151,"Custom Field - UTM Campaign",string
+No,customField_148,"Custom Field - Marketing Campaign",string

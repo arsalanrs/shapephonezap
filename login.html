@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in — Quest Rock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-text">
+            <span class="brand-name">Quest Rock Home Loans</span>
+            <span class="brand-sub">Internal sign-in</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main" style="max-width: 420px">
+      <section class="card">
+        <div class="card-header">
+          <h1 class="card-title">Sign in</h1>
+          <p class="card-desc">Use your Quest Rock credentials. Session is stored in a secure cookie.</p>
+        </div>
+        <div style="padding: 0 var(--card-px) 1.25rem">
+          <form id="login-form" class="field-group">
+            <label class="field-label" for="email">Email</label>
+            <input class="text-input" type="email" id="email" name="email" autocomplete="username" required />
+
+            <label class="field-label" for="password" style="margin-top: 0.75rem">Password</label>
+            <input class="text-input" type="password" id="password" name="password" autocomplete="current-password" required />
+
+            <div class="action-bar" style="margin-top: 1rem">
+              <button type="submit" class="btn btn--primary btn--lg" id="submit-btn">Continue</button>
+            </div>
+          </form>
+          <p id="login-error" class="inline-msg inline-msg--error" hidden role="alert"></p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      $("login-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const err = $("login-error");
+        err.hidden = true;
+        $("submit-btn").disabled = true;
+        try {
+          const res = await fetch("/api/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include",
+            body: JSON.stringify({
+              email: $("email").value.trim(),
+              password: $("password").value,
+            }),
+          });
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok) {
+            err.textContent = data.error || "Sign-in failed.";
+            err.hidden = false;
+            return;
+          }
+          window.location.href = "/";
+        } catch {
+          err.textContent = "Network error — try again.";
+          err.hidden = false;
+        } finally {
+          $("submit-btn").disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>

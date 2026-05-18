@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quest Rock — Shape transcript review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Run: npm run dev → local Node server (static + /api, loads .env). Static only: npm run dev:static. Vercel CLI: npm run dev:vercel -->
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="#2d6a4f" />
+            <path d="M10 22 L18 10 L26 22" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">Quest Rock Home Loans</span>
+            <span class="brand-sub">Shape transcript review</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-logout" href="/api/logout">Log out</a>
+          <span id="status-badge" class="status-badge status-idle" role="status">Ready</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <p class="flow-steps" aria-label="Workflow">
+        <span class="flow-step"><strong>1</strong> Lead ID, then <strong>Load from Shape</strong></span>
+        <span class="flow-step-sep" aria-hidden="true">→</span>
+        <span class="flow-step"><strong>2</strong> Transcripts, then <strong>Run AI extraction</strong></span>
+        <span class="flow-step-sep" aria-hidden="true">→</span>
+        <span class="flow-step"><strong>3</strong> Review, then <strong>Submit updates to Shape</strong> (QR engine)</span>
+      </p>
+
+      <details class="card card--collapsible card--sam-guide" open>
+        <summary class="collapsible-summary">
+          <span class="collapsible-label">
+            <svg class="summary-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M8 2v2M8 12v2M2 8h2M12 8h2" stroke-linecap="round" />
+              <circle cx="8" cy="8" r="3" />
+            </svg>
+            Simple steps (for Sam)
+          </span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="collapsible-body sam-steps" id="instructions-static">
+          <ol class="sam-steps-list">
+            <li>Type the <strong>Lead ID</strong>. Click <strong>Load from Shape</strong> and wait until the lead table appears.</li>
+            <li>
+              Add your call transcripts: paste into the box <em>and/or</em> drop files in the upload area. Then click
+              <strong>Run AI extraction</strong> and wait for the review table.
+            </li>
+            <li>
+              Read each row. You can click <strong>Accept all suggestions</strong> or type what you want in the
+              <strong>Approved</strong> column. When it looks right, click <strong>Submit updates to Shape</strong> — that sends
+              your approved changes through the <strong>Quest Rock (QR) engine</strong> into Shape so the lead is updated.
+            </li>
+          </ol>
+          <p class="sam-steps-note">If you see a red error message under a step, read it out loud or screenshot it for help.</p>
+        </div>
+      </details>
+
+      <section id="section-load" class="card">
+        <div class="card-header">
+          <p class="step-pill">Step 1</p>
+          <h1 class="card-title">Load lead from Shape</h1>
+          <p class="card-desc">Enter the lead ID and load every field from CRM into the table below.</p>
+        </div>
+        <div class="load-row">
+          <div class="field-group field-group--inline">
+            <label class="field-label" for="lead-id">Lead ID</label>
+            <input class="text-input" type="text" id="lead-id" autocomplete="off" placeholder="e.g. 12345" />
+          </div>
+          <button type="button" id="load-btn" class="btn btn--primary btn--lg">
+            <span>Load from Shape</span>
+          </button>
+        </div>
+        <p id="load-error" class="inline-msg inline-msg--error" hidden role="alert"></p>
+        <p id="mock-banner" class="inline-msg" hidden style="margin-top: 0.5rem; background: #fffbeb; border-color: #fcd34d; color: #854d0e">
+          Demo lead: add <code>SHAPE_API_KEY</code> and <code>SHAPE_CRM_ID</code> to <code>.env</code>, then run <code>npm run dev</code>.
+        </p>
+      </section>
+
+      <section id="section-fields" class="card card--fields" hidden>
+        <div class="card-header card-header--row">
+          <div>
+            <p class="step-pill step-pill--muted">Step 1</p>
+            <h2 class="card-title">Lead fields (from Shape)</h2>
+            <p class="card-desc">Empty rows are highlighted. Field names match Shape CRM.</p>
+          </div>
+          <div class="fields-meta">
+            <span id="fields-summary" class="fields-summary">—</span>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="fields-table">
+            <thead>
+              <tr>
+                <th class="col-field">Field</th>
+                <th class="col-value">Value in Shape</th>
+                <th class="col-status">Status</th>
+              </tr>
+            </thead>
+            <tbody id="fields-tbody"></tbody>
+          </table>
+        </div>
+        <p id="fields-empty" class="prose" style="padding: 1rem var(--card-px)">No fields to show.</p>
+      </section>
+
+      <section id="section-transcripts" class="card" hidden>
+        <div class="card-header">
+          <p class="step-pill">Step 2</p>
+          <h2 class="card-title">Transcripts → AI extraction</h2>
+          <p class="card-desc">
+            Add call transcripts (paste and/or upload). Then run extraction — the AI uses the current lead plus all
+            transcript text to propose field updates.
+          </p>
+        </div>
+        <div style="padding: 0 var(--card-px) 1rem">
+          <div class="field-group transcript-area">
+            <label class="field-label" for="transcript-text">Paste transcript (optional)</label>
+            <textarea class="text-area" id="transcript-text" rows="5" spellcheck="false" placeholder="Call notes…"></textarea>
+          </div>
+
+          <div class="divider-or">or upload</div>
+
+          <label id="upload-zone" class="upload-zone" for="transcript-file">
+            <input
+              class="sr-only"
+              type="file"
+              id="transcript-file"
+              multiple
+              accept=".txt,.text,.md,.log,.csv,.pdf,.docx"
+            />
+            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+              <path d="M12 4v12M8 8l4-4 4 4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" />
+            </svg>
+            <span class="upload-label">Drop files here or <span class="upload-link">browse</span></span>
+            <span class="upload-hint">.txt, .md, .csv — multiple files combined in order</span>
+          </label>
+          <div id="file-list" class="file-list"></div>
+
+          <div class="action-bar">
+            <button type="button" id="submit-btn" class="btn btn--primary btn--lg" disabled>
+              <span>Run AI extraction</span>
+            </button>
+          </div>
+          <p id="submit-error" class="inline-msg inline-msg--error" hidden role="alert"></p>
+        </div>
+      </section>
+
+      <section id="section-review" class="card" hidden>
+        <div class="card-header card-header--row">
+          <div>
+            <p class="step-pill">Step 3</p>
+            <h2 class="card-title">Review &amp; submit to Shape</h2>
+            <p class="card-desc">
+              Check each row, edit <strong>Approved</strong> if needed, then click <strong>Submit updates to Shape</strong>.
+              That sends only changed fields to Shape (same as the JSON preview).
+            </p>
+          </div>
+          <span id="review-meta" class="review-meta">—</span>
+        </div>
+        <div class="table-wrap" style="border-top: 1px solid var(--color-sand-200)">
+          <table class="fields-table">
+            <thead>
+              <tr>
+                <th class="col-field">Field</th>
+                <th class="col-value">Current</th>
+                <th class="col-value">Suggested (AI)</th>
+                <th style="width: 8%">Conf.</th>
+                <th class="col-value">Approved</th>
+              </tr>
+            </thead>
+            <tbody id="review-tbody"></tbody>
+          </table>
+        </div>
+        <p id="review-empty" class="prose" style="padding: 1rem var(--card-px)">No rows yet.</p>
+        <div class="action-bar" style="padding: 0 var(--card-px) 0.5rem">
+          <button type="button" id="approve-all-btn" class="btn btn--secondary" disabled>Accept all suggestions</button>
+          <button type="button" id="clear-review-btn" class="btn btn--ghost" disabled>Clear review</button>
+        </div>
+
+        <div id="payload-block" class="payload-block" hidden>
+          <h3 class="payload-block-title">JSON preview (what Shape will receive)</h3>
+          <button type="button" id="build-payload-btn" class="btn btn--secondary btn--sm" style="margin: 0 var(--card-px) 0.5rem" disabled>
+            Refresh preview
+          </button>
+          <pre id="payload-output" class="payload-pre" tabindex="0"></pre>
+          <div class="action-bar" style="padding: 0 var(--card-px) 1rem">
+            <button type="button" id="push-btn" class="btn btn--primary btn--lg" disabled>
+              <span>Submit updates to Shape</span>
+            </button>
+            <button type="button" id="copy-payload-btn" class="btn btn--secondary" disabled>Copy JSON</button>
+          </div>
+        </div>
+        <p id="push-error" class="inline-msg inline-msg--error" hidden role="alert" style="margin: 0 var(--card-px)"></p>
+        <p id="push-success" class="inline-msg inline-msg--success" hidden role="status" style="margin: 0 var(--card-px) 1rem"></p>
+      </section>
+    </main>
+
+    <footer class="app-footer">Quest Rock Home Loans — internal tool. Secrets stay on the server.</footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

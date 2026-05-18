@@ -1,0 +1,89 @@
+/**
+ * POST /api/shape-update
+ * Accepts client body: { "leadId": "...", "fieldName": value, ... }
+ * Forwards to Shape: POST .../update/lead/info with body { "leadid": ..., ...fields }
+ * (Shape expects lowercase leadid per SetShape API.)
+ */
+
+const DEFAULT_BASE = "https://secure-api.setshape.com/api";
+
+module.exports = async (req, res) => {
+  if (req.method !== "POST") {
+    res.setHeader("Allow", "POST");
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  const { requireSessionOr401 } = require("../lib/session.cjs");
+  if (!requireSessionOr401(req, res)) return;
+
+  let body = req.body;
+  if (typeof body === "string") {
+    try {
+      body = JSON.parse(body || "{}");
+    } catch {
+      return res.status(400).json({ error: "Invalid JSON body" });
+    }
+  }
+
+  const leadId = body?.leadId ?? body?.leadid;
+  if (leadId === undefined || leadId === null || String(leadId).trim() === "") {
+    return res.status(400).json({ error: "leadId required in JSON body" });
+  }
+
+  const { leadId: _l1, leadid: _l2, ...fields } = body;
+  const keys = Object.keys(fields).filter((k) => fields[k] !== undefined);
+  if (!keys.length) {
+    return res.status(400).json({ error: "No fields to update" });
+  }
+
+  const apiKey = process.env.SHAPE_API_KEY || process.env.SHAPE_ACCESS_TOKEN;
+  const baseUrl = (process.env.SHAPE_BASE_URL || DEFAULT_BASE).replace(/\/+$/, "");
+
+  if (!apiKey) {
+    res.setHeader("X-Shape-Update-Source", "mock");
+    return res.status(200).json({
+      ok: true,
+      mock: true,
+      leadId: String(leadId),
+      updatedFieldCount: keys.length,
+    });
+  }
+
+  const leadid = /^\d+$/.test(String(leadId)) ? Number(leadId) : leadId;
+  const shapeBody = { leadid, ...fields };
+
+  try {
+    const shapeRes = await fetch(`${baseUrl}/update/lead/info`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: apiKey,
+      },
+      body: JSON.stringify(shapeBody),
+    });
+
+    const text = await shapeRes.text();
+    let json;
+    try {
+      json = text ? JSON.parse(text) : {};
+    } catch {
+      return res.status(502).json({ error: "Shape returned non-JSON", detail: text.slice(0, 500) });
+    }
+
+    if (!shapeRes.ok) {
+      return res.status(shapeRes.status).json({
+        error: "Shape update/lead/info failed",
+        status: shapeRes.status,
+        detail: json,
+      });
+    }
+
+    res.setHeader("X-Shape-Update-Source", "live");
+    return res.status(200).json(json);
+  } catch (err) {
+    return res.status(502).json({
+      error: "Shape request failed",
+      message: err && err.message ? String(err.message) : String(err),
+    });
+  }
+};

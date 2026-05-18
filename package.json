@@ -1,0 +1,14 @@
+{
+  "name": "shapephonezap",
+  "private": true,
+  "scripts": {
+    "dev": "node dev-server.cjs",
+    "dev:static": "serve . -l 3000",
+    "dev:vercel": "npx --yes vercel@latest dev",
+    "build": "node -e \"console.log('Static site: no compile step.'); process.exit(0)\""
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "serve": "^14.2.4"
+  }
+}
