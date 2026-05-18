@@ -5,7 +5,7 @@
     "dev": "node dev-server.cjs",
     "dev:static": "serve . -l 3000",
     "dev:vercel": "npx --yes vercel@latest dev",
-    "build": "node -e \"console.log('Static site: no compile step.'); process.exit(0)\""
+    "build": "node scripts/vercel-build.cjs"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
