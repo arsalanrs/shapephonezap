@@ -1,8 +1,15 @@
 /**
  * POST /api/shape-update
- * Accepts client body: { "leadId": "...", "fieldName": value, ... }
- * Forwards to Shape: POST .../update/lead/info with body { "leadid": ..., ...fields }
- * (Shape expects lowercase leadid per SetShape API.)
+ *
+ * Proxies Shape **Update Lead Record**:
+ * `POST {SHAPE_BASE_URL}/update/lead/info/{SHAPE_CRM_ID}` (same CRM id as lead search; see SetShape Open API).
+ *
+ * Client JSON: `{ "leadId": "<id>", ...fieldUpdates }` or `leadid` / `lead_id` (stripped before forwarding).
+ * Shape body uses **`lead_id`** plus field updates.
+ *
+ * Headers to Shape: `Authorization: <API key>` (raw key from Settings → API Integrations; branch keys when using branching).
+ *
+ * Mock: when `SHAPE_API_KEY` / `SHAPE_ACCESS_TOKEN` is unset, returns `{ ok: true, mock: true }`.
  */
 
 const DEFAULT_BASE = "https://secure-api.setshape.com/api";
@@ -25,12 +32,12 @@ module.exports = async (req, res) => {
     }
   }
 
-  const leadId = body?.leadId ?? body?.leadid;
+  const leadId = body?.leadId ?? body?.leadid ?? body?.lead_id;
   if (leadId === undefined || leadId === null || String(leadId).trim() === "") {
     return res.status(400).json({ error: "leadId required in JSON body" });
   }
 
-  const { leadId: _l1, leadid: _l2, ...fields } = body;
+  const { leadId: _l1, leadid: _l2, lead_id: _l3, ...fields } = body;
   const keys = Object.keys(fields).filter((k) => fields[k] !== undefined);
   if (!keys.length) {
     return res.status(400).json({ error: "No fields to update" });
@@ -49,11 +56,20 @@ module.exports = async (req, res) => {
     });
   }
 
-  const leadid = /^\d+$/.test(String(leadId)) ? Number(leadId) : leadId;
-  const shapeBody = { leadid, ...fields };
+  const crmId = process.env.SHAPE_CRM_ID || process.env.SHAPE_ACCOUNT_ID || process.env.CRM_ID || "";
+  if (!String(crmId).trim()) {
+    return res.status(500).json({
+      error:
+        "Missing SHAPE_CRM_ID (or SHAPE_ACCOUNT_ID). Shape requires POST /update/lead/info/{crmid} — use the same CRM id as for /search/lead/{crmid}.",
+    });
+  }
+
+  const lead_id = /^\d+$/.test(String(leadId)) ? Number(leadId) : leadId;
+  const shapeBody = { lead_id, ...fields };
 
   try {
-    const shapeRes = await fetch(`${baseUrl}/update/lead/info`, {
+    const crmPath = encodeURIComponent(String(crmId).trim());
+    const shapeRes = await fetch(`${baseUrl}/update/lead/info/${crmPath}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +88,7 @@ module.exports = async (req, res) => {
 
     if (!shapeRes.ok) {
       return res.status(shapeRes.status).json({
-        error: "Shape update/lead/info failed",
+        error: "Shape update/lead/info/{crmid} failed",
         status: shapeRes.status,
         detail: json,
       });
